@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekomendasi Wisata Riau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Sistem Rekomendasi Semantik</p>
+        <h1>Temukan Destinasi Wisata Riau Berdasarkan Minat Anda</h1>
+        <p class="subtitle">
+          Masukkan kata kunci atau preferensi perjalanan. Sistem akan memproses
+          query dengan model pre-trained Sentence-BERT dan menampilkan Top-N
+          rekomendasi.
+        </p>
+      </section>
+
+      <section class="search-card">
+        <form id="recommend-form">
+          <label for="query">Query Preferensi</label>
+          <div class="row">
+            <input
+              id="query"
+              name="query"
+              type="text"
+              placeholder="Contoh: pantai keluarga dengan fasilitas lengkap"
+              required
+            />
+            <input id="top_n" name="top_n" type="number" min="1" max="10" value="5" />
+            <button type="submit">Cari Rekomendasi</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="result-card">
+        <h2>Hasil Rekomendasi</h2>
+        <ul id="results"></ul>
+      </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>

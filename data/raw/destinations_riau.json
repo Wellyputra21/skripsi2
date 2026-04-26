@@ -1,0 +1,410 @@
+[
+  {
+    "id": "riau-001",
+    "name": "Pantai Rupat Utara",
+    "description": "Pantai unggulan Pulau Rupat dengan hamparan pasir putih dan panorama Selat Malaka.",
+    "category": "pantai",
+    "location": "Bengkalis",
+    "rating": 4.7
+  },
+  {
+    "id": "riau-002",
+    "name": "Pantai Lapin Tanjung Punak",
+    "description": "Pantai di Rupat Utara yang populer untuk rekreasi keluarga dan menikmati sunset.",
+    "category": "pantai",
+    "location": "Bengkalis",
+    "rating": 4.5
+  },
+  {
+    "id": "riau-003",
+    "name": "Pantai Cemara Tanjung Punak",
+    "description": "Pantai teduh dengan pohon cemara di kawasan Tanjung Punak Pulau Rupat.",
+    "category": "pantai",
+    "location": "Bengkalis",
+    "rating": 4.4
+  },
+  {
+    "id": "riau-004",
+    "name": "Pantai Selatbaru",
+    "description": "Pantai pesisir Bengkalis yang ramai dikunjungi saat akhir pekan dan hari libur.",
+    "category": "pantai",
+    "location": "Bengkalis",
+    "rating": 4.4
+  },
+  {
+    "id": "riau-005",
+    "name": "Pantai Ketapang Rupat Timur",
+    "description": "Pantai di Rupat Timur yang berhadapan langsung dengan Selat Malaka.",
+    "category": "pantai",
+    "location": "Bengkalis",
+    "rating": 4.3
+  },
+  {
+    "id": "riau-006",
+    "name": "Pantai Makruh Rupat Timur",
+    "description": "Bagian dari kawasan wisata pantai Rupat Timur yang cocok untuk wisata bahari.",
+    "category": "pantai",
+    "location": "Bengkalis",
+    "rating": 4.2
+  },
+  {
+    "id": "riau-007",
+    "name": "Cagar Biosfer Giam Siak Kecil Bukit Batu",
+    "description": "Kawasan konservasi biosfer dengan ekosistem gambut penting di Riau.",
+    "category": "konservasi",
+    "location": "Bengkalis",
+    "rating": 4.6
+  },
+  {
+    "id": "riau-008",
+    "name": "Istana Kesultanan Indragiri",
+    "description": "Peninggalan sejarah Kesultanan Indragiri yang menjadi ikon budaya lokal.",
+    "category": "sejarah",
+    "location": "Indragiri Hilir",
+    "rating": 4.3
+  },
+  {
+    "id": "riau-009",
+    "name": "Danau Raja",
+    "description": "Danau kota yang kerap dimanfaatkan untuk rekreasi dan kegiatan masyarakat.",
+    "category": "danau",
+    "location": "Indragiri Hulu",
+    "rating": 4.2
+  },
+  {
+    "id": "riau-010",
+    "name": "Taman Nasional Bukit Tiga Puluh",
+    "description": "Kawasan hutan hujan tropis dengan keanekaragaman hayati tinggi di perbatasan Riau-Jambi.",
+    "category": "taman nasional",
+    "location": "Indragiri Hulu",
+    "rating": 4.7
+  },
+  {
+    "id": "riau-011",
+    "name": "Candi Muara Takus",
+    "description": "Kompleks candi Buddha bersejarah yang menjadi situs arkeologi penting di Riau.",
+    "category": "cagar budaya",
+    "location": "Kampar",
+    "rating": 4.8
+  },
+  {
+    "id": "riau-012",
+    "name": "Masjid Jami Air Tiris",
+    "description": "Masjid tua berarsitektur Melayu yang dikenal sebagai wisata religi di Kampar.",
+    "category": "religi",
+    "location": "Kampar",
+    "rating": 4.5
+  },
+  {
+    "id": "riau-013",
+    "name": "Stanum Bangkinang",
+    "description": "Objek wisata keluarga di Bangkinang dengan ruang terbuka dan area rekreasi.",
+    "category": "taman rekreasi",
+    "location": "Kampar",
+    "rating": 4.0
+  },
+  {
+    "id": "riau-014",
+    "name": "Kubang Zoo",
+    "description": "Kebun binatang mini di wilayah Kampar untuk wisata edukasi keluarga.",
+    "category": "edukasi",
+    "location": "Kampar",
+    "rating": 3.9
+  },
+  {
+    "id": "riau-015",
+    "name": "Pantai Motong",
+    "description": "Pantai populer di Kepulauan Meranti dengan suasana pesisir yang tenang.",
+    "category": "pantai",
+    "location": "Kepulauan Meranti",
+    "rating": 4.3
+  },
+  {
+    "id": "riau-016",
+    "name": "Pantai Ceria",
+    "description": "Pantai wisata keluarga di Kepulauan Meranti dengan panorama laut terbuka.",
+    "category": "pantai",
+    "location": "Kepulauan Meranti",
+    "rating": 4.1
+  },
+  {
+    "id": "riau-017",
+    "name": "Tasik Putri Pepuyu",
+    "description": "Tasik alami di Kepulauan Meranti yang menjadi daya tarik wisata air.",
+    "category": "danau",
+    "location": "Kepulauan Meranti",
+    "rating": 4.2
+  },
+  {
+    "id": "riau-018",
+    "name": "Tasik Nembus",
+    "description": "Kawasan tasik di Meranti yang dikenal dengan panorama rawa dan air tenang.",
+    "category": "danau",
+    "location": "Kepulauan Meranti",
+    "rating": 4.0
+  },
+  {
+    "id": "riau-019",
+    "name": "Tasik Air Putih",
+    "description": "Tasik air tawar di Kepulauan Meranti yang sering dikunjungi wisatawan lokal.",
+    "category": "danau",
+    "location": "Kepulauan Meranti",
+    "rating": 4.1
+  },
+  {
+    "id": "riau-020",
+    "name": "Vihara Sejahtera Sakti Selatpanjang",
+    "description": "Kelenteng tua di Selatpanjang yang menjadi ikon religi dan budaya Tionghoa Riau.",
+    "category": "religi",
+    "location": "Kepulauan Meranti",
+    "rating": 4.6
+  },
+  {
+    "id": "riau-021",
+    "name": "Pacu Jalur",
+    "description": "Atraksi budaya balap perahu tradisional di Sungai Kuantan yang mendunia.",
+    "category": "budaya",
+    "location": "Kuantan Singingi",
+    "rating": 4.8
+  },
+  {
+    "id": "riau-022",
+    "name": "Air Terjun Guruh Gemurai",
+    "description": "Air terjun bertingkat di Kuantan Singingi dengan kawasan hutan yang asri.",
+    "category": "air terjun",
+    "location": "Kuantan Singingi",
+    "rating": 4.6
+  },
+  {
+    "id": "riau-023",
+    "name": "Air Terjun Batang Koban",
+    "description": "Destinasi air terjun alam di Kuantan Singingi dengan jalur trekking ringan.",
+    "category": "air terjun",
+    "location": "Kuantan Singingi",
+    "rating": 4.2
+  },
+  {
+    "id": "riau-024",
+    "name": "Panorama Bukit Cokiak",
+    "description": "Spot panorama perbukitan dengan pemandangan luas kawasan Kuantan Singingi.",
+    "category": "bukit",
+    "location": "Kuantan Singingi",
+    "rating": 4.3
+  },
+  {
+    "id": "riau-025",
+    "name": "Taman Nasional Tesso Nilo",
+    "description": "Kawasan konservasi hutan dataran rendah Sumatra dengan satwa liar khas.",
+    "category": "taman nasional",
+    "location": "Pelalawan",
+    "rating": 4.7
+  },
+  {
+    "id": "riau-026",
+    "name": "Istana Kesultanan Pelalawan",
+    "description": "Situs sejarah Kesultanan Pelalawan yang merekam warisan budaya Melayu.",
+    "category": "sejarah",
+    "location": "Pelalawan",
+    "rating": 4.2
+  },
+  {
+    "id": "riau-027",
+    "name": "Ombak Bono Teluk Meranti",
+    "description": "Fenomena gelombang sungai Kampar yang terkenal untuk aktivitas selancar.",
+    "category": "wisata alam",
+    "location": "Pelalawan",
+    "rating": 4.8
+  },
+  {
+    "id": "riau-028",
+    "name": "Tugu Khatulistiwa Pangkalan Kuras",
+    "description": "Monumen penanda geografis yang menjadi titik singgah wisata di Pelalawan.",
+    "category": "monumen",
+    "location": "Pelalawan",
+    "rating": 4.0
+  },
+  {
+    "id": "riau-029",
+    "name": "Kepulauan Arwah",
+    "description": "Gugusan pulau di perairan Rokan Hilir yang potensial untuk wisata bahari.",
+    "category": "pulau",
+    "location": "Rokan Hilir",
+    "rating": 4.2
+  },
+  {
+    "id": "riau-030",
+    "name": "Pulau Jemur",
+    "description": "Destinasi pulau dengan pantai berpasir, mercusuar, dan habitat penyu.",
+    "category": "pulau",
+    "location": "Rokan Hilir",
+    "rating": 4.6
+  },
+  {
+    "id": "riau-031",
+    "name": "Ritual Bakar Tongkang",
+    "description": "Festival budaya tahunan di Bagansiapiapi yang dikenal secara nasional.",
+    "category": "budaya",
+    "location": "Rokan Hilir",
+    "rating": 4.7
+  },
+  {
+    "id": "riau-032",
+    "name": "Danau Napangga",
+    "description": "Danau alami di Rokan Hilir yang menjadi lokasi wisata masyarakat setempat.",
+    "category": "danau",
+    "location": "Rokan Hilir",
+    "rating": 4.1
+  },
+  {
+    "id": "riau-033",
+    "name": "Air Terjun Aek Martua",
+    "description": "Air terjun bertingkat di Bangun Purba yang dikenal sebagai tangga seribu.",
+    "category": "air terjun",
+    "location": "Rokan Hulu",
+    "rating": 4.7
+  },
+  {
+    "id": "riau-034",
+    "name": "Benteng Tujuh Lapis",
+    "description": "Situs benteng tanah bersejarah peninggalan perjuangan di wilayah Dalu-Dalu.",
+    "category": "sejarah",
+    "location": "Rokan Hulu",
+    "rating": 4.3
+  },
+  {
+    "id": "riau-035",
+    "name": "Sumber Air Pawan",
+    "description": "Objek wisata mata air alami yang dikenal masyarakat Rokan Hulu.",
+    "category": "wisata alam",
+    "location": "Rokan Hulu",
+    "rating": 4.0
+  },
+  {
+    "id": "riau-036",
+    "name": "Bukit Suligi",
+    "description": "Perbukitan dengan jalur pendakian dan panorama sunrise yang menawan.",
+    "category": "bukit",
+    "location": "Rokan Hulu",
+    "rating": 4.5
+  },
+  {
+    "id": "riau-037",
+    "name": "Istana Siak Sri Indrapura",
+    "description": "Istana kerajaan Melayu Siak dengan koleksi sejarah dan arsitektur khas.",
+    "category": "sejarah",
+    "location": "Siak",
+    "rating": 4.8
+  },
+  {
+    "id": "riau-038",
+    "name": "Danau Pulau Besar Zamrud",
+    "description": "Kawasan danau di Siak dengan panorama alam dan status suaka margasatwa.",
+    "category": "danau",
+    "location": "Siak",
+    "rating": 4.4
+  },
+  {
+    "id": "riau-039",
+    "name": "Danau Bawah Zamrud",
+    "description": "Danau alam di kawasan Zamrud yang dikenal dengan bentang lahan basahnya.",
+    "category": "danau",
+    "location": "Siak",
+    "rating": 4.3
+  },
+  {
+    "id": "riau-040",
+    "name": "Danau Naga Sungai Apit",
+    "description": "Objek wisata danau di Siak dengan nilai ekowisata dan keanekaragaman hayati.",
+    "category": "danau",
+    "location": "Siak",
+    "rating": 4.2
+  },
+  {
+    "id": "riau-041",
+    "name": "Pantai Teluk Makmur",
+    "description": "Pantai utama Kota Dumai yang menjadi destinasi favorit wisata pesisir.",
+    "category": "pantai",
+    "location": "Dumai",
+    "rating": 4.3
+  },
+  {
+    "id": "riau-042",
+    "name": "Masjid Agung An-Nur",
+    "description": "Ikon religi Pekanbaru dengan arsitektur megah dan area kompleks luas.",
+    "category": "religi",
+    "location": "Pekanbaru",
+    "rating": 4.8
+  },
+  {
+    "id": "riau-043",
+    "name": "Perpustakaan Soeman HS",
+    "description": "Landmark literasi Pekanbaru dengan desain bangunan khas budaya Melayu.",
+    "category": "edukasi",
+    "location": "Pekanbaru",
+    "rating": 4.6
+  },
+  {
+    "id": "riau-044",
+    "name": "Alam Mayang",
+    "description": "Taman rekreasi keluarga di Pekanbaru dengan danau buatan dan wahana luar ruang.",
+    "category": "taman rekreasi",
+    "location": "Pekanbaru",
+    "rating": 4.2
+  },
+  {
+    "id": "riau-045",
+    "name": "Pasar Bawah",
+    "description": "Kawasan belanja legendaris Pekanbaru yang dikenal sebagai wisata urban.",
+    "category": "wisata kota",
+    "location": "Pekanbaru",
+    "rating": 4.1
+  },
+  {
+    "id": "riau-046",
+    "name": "Danau Limbungan",
+    "description": "Danau di Pekanbaru yang sering dijadikan area rekreasi masyarakat lokal.",
+    "category": "danau",
+    "location": "Pekanbaru",
+    "rating": 4.0
+  },
+  {
+    "id": "riau-047",
+    "name": "Bandar Serai",
+    "description": "Kawasan budaya dan kegiatan seni yang menjadi ruang publik di Pekanbaru.",
+    "category": "budaya",
+    "location": "Pekanbaru",
+    "rating": 4.1
+  },
+  {
+    "id": "riau-048",
+    "name": "Masjid Raya Senapelan",
+    "description": "Masjid bersejarah di kawasan Senapelan yang terkait perkembangan awal Pekanbaru.",
+    "category": "religi",
+    "location": "Pekanbaru",
+    "rating": 4.6
+  },
+  {
+    "id": "riau-049",
+    "name": "Asia Farm Pekanbaru",
+    "description": "Destinasi wisata edukasi modern untuk keluarga dengan konsep peternakan dan taman.",
+    "category": "edukasi",
+    "location": "Pekanbaru",
+    "rating": 4.3
+  },
+  {
+    "id": "riau-050",
+    "name": "Rumah Tenun Kampung Bandar",
+    "description": "Wisata budaya yang menampilkan kerajinan tenun tradisional Melayu di Pekanbaru.",
+    "category": "budaya",
+    "location": "Pekanbaru",
+    "rating": 4.4
+  },
+  {
+    "id": "riau-051",
+    "name": "Batu Gajah",
+    "description": "Situs lokal di Pekanbaru yang dikenal sebagai titik sejarah dan cerita rakyat.",
+    "category": "sejarah",
+    "location": "Pekanbaru",
+    "rating": 3.9
+  }
+]
