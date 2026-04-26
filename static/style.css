@@ -1,13 +1,13 @@
 :root {
-  --bg-1: #0b0a09;
-  --bg-2: #171310;
-  --panel: rgba(22, 18, 14, 0.82);
-  --panel-edge: rgba(193, 154, 92, 0.35);
-  --ink: #f6efe3;
-  --muted: #ccbfa9;
-  --accent: #c19a5c;
-  --accent-strong: #e4bf84;
-  --ring: rgba(193, 154, 92, 0.28);
+  --bg-1: #f8f4eb;
+  --bg-2: #e8f2f4;
+  --panel: rgba(255, 255, 255, 0.88);
+  --panel-edge: rgba(29, 123, 155, 0.17);
+  --ink: #1f2a33;
+  --muted: #5f7282;
+  --accent: #1e7b9a;
+  --accent-strong: #f19b3f;
+  --ring: rgba(30, 123, 154, 0.22);
 }
 
 * {
@@ -19,9 +19,10 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at 15% 8%, rgba(193, 154, 92, 0.16), transparent 34%),
-    radial-gradient(circle at 84% 18%, rgba(164, 121, 62, 0.2), transparent 42%),
-    linear-gradient(145deg, var(--bg-1), var(--bg-2));
+    radial-gradient(circle at 8% 10%, rgba(30, 123, 154, 0.2), transparent 28%),
+    radial-gradient(circle at 90% 8%, rgba(241, 155, 63, 0.24), transparent 30%),
+    radial-gradient(circle at 70% 92%, rgba(78, 178, 132, 0.24), transparent 34%),
+    linear-gradient(150deg, var(--bg-1), var(--bg-2));
   min-height: 100vh;
   position: relative;
 }
@@ -30,9 +31,9 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 30px 30px;
+  background-image: linear-gradient(rgba(24, 53, 66, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 53, 66, 0.04) 1px, transparent 1px);
+  background-size: 34px 34px;
   mask-image: radial-gradient(circle at center, black, transparent 78%);
   pointer-events: none;
 }
@@ -42,18 +43,18 @@ body::before {
   margin: 34px auto;
   display: grid;
   gap: 20px;
-  animation: reveal 700ms ease-out;
+  animation: reveal 620ms ease-out;
 }
 
 .hero,
 .search-card,
 .result-card {
   background: var(--panel);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--panel-edge);
   border-radius: 22px;
   padding: 26px;
-  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 18px 45px rgba(31, 54, 76, 0.14);
   position: relative;
   overflow: hidden;
 }
@@ -64,7 +65,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(130deg, rgba(255, 255, 255, 0.05), transparent 38%);
+  background: linear-gradient(130deg, rgba(255, 255, 255, 0.45), transparent 42%);
   pointer-events: none;
 }
 
@@ -72,16 +73,16 @@ body::before {
   margin: 0;
   color: var(--accent);
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 h1 {
   margin: 10px 0;
   font-family: "Playfair Display", serif;
-  font-size: clamp(28px, 3.7vw, 46px);
-  line-height: 1.12;
+  font-size: clamp(30px, 3.7vw, 48px);
+  line-height: 1.1;
   letter-spacing: 0.01em;
 }
 
@@ -92,11 +93,28 @@ h1 {
   line-height: 1.6;
 }
 
+.hero-tags {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-tag {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(30, 123, 154, 0.25);
+  background: rgba(30, 123, 154, 0.08);
+  font-size: 13px;
+  font-weight: 600;
+  color: #246a84;
+}
+
 label {
   display: block;
   font-weight: 600;
   margin-bottom: 12px;
-  color: var(--accent-strong);
+  color: var(--accent);
 }
 
 .row {
@@ -108,18 +126,18 @@ label {
 input,
 button {
   border-radius: 12px;
-  border: 1px solid rgba(193, 154, 92, 0.4);
+  border: 1px solid rgba(30, 123, 154, 0.25);
   padding: 12px 14px;
   font: inherit;
 }
 
 input {
-  color: var(--ink);
-  background: rgba(12, 10, 8, 0.62);
+  color: #1d2a34;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 input::placeholder {
-  color: #9f927d;
+  color: #8093a0;
 }
 
 input:focus {
@@ -129,23 +147,37 @@ input:focus {
 
 button {
   border: 0;
-  background: linear-gradient(135deg, #9d7439, #ddb16d);
-  color: #1a1309;
+  background: linear-gradient(135deg, #207d9c, #34a8cf);
+  color: #ffffff;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 8px 18px rgba(157, 116, 57, 0.38);
+  box-shadow: 0 8px 18px rgba(32, 125, 156, 0.34);
   transition: transform 200ms ease, filter 200ms ease;
 }
 
 button:hover {
   transform: translateY(-2px);
-  filter: brightness(1.07);
+  filter: saturate(1.08);
+}
+
+.result-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .result-card h2 {
-  margin-top: 0;
+  margin: 0;
   font-family: "Playfair Display", serif;
   letter-spacing: 0.01em;
+}
+
+#result-summary {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 #results {
@@ -157,17 +189,23 @@ button:hover {
 }
 
 .item {
-  border: 1px solid rgba(193, 154, 92, 0.26);
+  border: 1px solid rgba(30, 123, 154, 0.22);
   border-radius: 14px;
-  padding: 15px;
-  background: linear-gradient(130deg, rgba(31, 25, 19, 0.96), rgba(16, 13, 10, 0.96));
+  padding: 16px;
+  background: linear-gradient(130deg, rgba(255, 255, 255, 0.92), rgba(240, 247, 250, 0.9));
   animation: rise 420ms ease-out;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(31, 84, 107, 0.12);
 }
 
 .item h3 {
   margin: 0;
   font-family: "Playfair Display", serif;
-  color: #f1dfbf;
+  color: #1e3140;
 }
 
 .item p {
@@ -176,9 +214,51 @@ button:hover {
 }
 
 .meta {
-  margin-top: 8px;
+  margin-top: 10px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.chip-row {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(30, 123, 154, 0.1);
+  color: #1e6178;
+  border: 1px solid rgba(30, 123, 154, 0.2);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.score-wrap {
+  margin-top: 10px;
+}
+
+.score-label {
+  font-size: 13px;
+  color: #496575;
+}
+
+.score-track {
+  margin-top: 6px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(30, 123, 154, 0.12);
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2a90b2, #f19b3f);
 }
 
 @keyframes reveal {
@@ -208,6 +288,11 @@ button:hover {
   .search-card,
   .result-card {
     padding: 20px;
+  }
+
+  .result-head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .row {
