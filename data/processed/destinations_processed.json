@@ -6,6 +6,11 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.7,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,rupat,utara,pantai,bengkalis,riau,indonesia?lock=8799179",
+      "https://loremflickr.com/1600/900/pantai,rupat,utara,pantai,bengkalis,riau,indonesia?lock=254188",
+      "https://loremflickr.com/1600/900/pantai,rupat,utara,pantai,bengkalis,riau,indonesia?lock=7558322"
+    ],
     "text_for_embedding": "pantai rupat utara pantai unggulan pulau rupat dengan hamparan pasir putih dan panorama selat malaka pantai bengkalis"
   },
   {
@@ -15,6 +20,11 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.5,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,lapin,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=1197060",
+      "https://loremflickr.com/1600/900/pantai,lapin,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=6952994",
+      "https://loremflickr.com/1600/900/pantai,lapin,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=5130523"
+    ],
     "text_for_embedding": "pantai lapin tanjung punak pantai di rupat utara yang populer untuk rekreasi keluarga dan menikmati sunset pantai bengkalis"
   },
   {
@@ -24,6 +34,11 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.4,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,cemara,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=1419667",
+      "https://loremflickr.com/1600/900/pantai,cemara,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=6497847",
+      "https://loremflickr.com/1600/900/pantai,cemara,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=5666043"
+    ],
     "text_for_embedding": "pantai cemara tanjung punak pantai teduh dengan pohon cemara di kawasan tanjung punak pulau rupat pantai bengkalis"
   },
   {
@@ -33,6 +48,11 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.4,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,selatbaru,pantai,bengkalis,riau,indonesia?lock=7012119",
+      "https://loremflickr.com/1600/900/pantai,selatbaru,pantai,bengkalis,riau,indonesia?lock=1098955",
+      "https://loremflickr.com/1600/900/pantai,selatbaru,pantai,bengkalis,riau,indonesia?lock=8685176"
+    ],
     "text_for_embedding": "pantai selatbaru pantai pesisir bengkalis yang ramai dikunjungi saat akhir pekan dan hari libur pantai bengkalis"
   },
   {
@@ -42,6 +62,11 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.3,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,ketapang,rupat,timur,pantai,bengkalis,riau,indonesia?lock=8117118",
+      "https://loremflickr.com/1600/900/pantai,ketapang,rupat,timur,pantai,bengkalis,riau,indonesia?lock=3841901",
+      "https://loremflickr.com/1600/900/pantai,ketapang,rupat,timur,pantai,bengkalis,riau,indonesia?lock=1682615"
+    ],
     "text_for_embedding": "pantai ketapang rupat timur pantai di rupat timur yang berhadapan langsung dengan selat malaka pantai bengkalis"
   },
   {
@@ -51,6 +76,11 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.2,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,makruh,rupat,timur,pantai,bengkalis,riau,indonesia?lock=6014954",
+      "https://loremflickr.com/1600/900/pantai,makruh,rupat,timur,pantai,bengkalis,riau,indonesia?lock=2665179",
+      "https://loremflickr.com/1600/900/pantai,makruh,rupat,timur,pantai,bengkalis,riau,indonesia?lock=2171464"
+    ],
     "text_for_embedding": "pantai makruh rupat timur bagian dari kawasan wisata pantai rupat timur yang cocok untuk wisata bahari pantai bengkalis"
   },
   {
@@ -60,6 +90,11 @@
     "category": "konservasi",
     "location": "Bengkalis",
     "rating": 4.6,
+    "images": [
+      "https://loremflickr.com/1600/900/cagar,biosfer,giam,siak,kecil,bukit,batu,konservasi,bengkalis,riau,indonesia?lock=6465179",
+      "https://loremflickr.com/1600/900/cagar,biosfer,giam,siak,kecil,bukit,batu,konservasi,bengkalis,riau,indonesia?lock=7556914",
+      "https://loremflickr.com/1600/900/cagar,biosfer,giam,siak,kecil,bukit,batu,konservasi,bengkalis,riau,indonesia?lock=292609"
+    ],
     "text_for_embedding": "cagar biosfer giam siak kecil bukit batu kawasan konservasi biosfer dengan ekosistem gambut penting di riau konservasi bengkalis"
   },
   {
@@ -69,6 +104,11 @@
     "category": "sejarah",
     "location": "Indragiri Hilir",
     "rating": 4.3,
+    "images": [
+      "https://loremflickr.com/1600/900/istana,kesultanan,indragiri,sejarah,indragiri,hilir,riau,indonesia?lock=2070109",
+      "https://loremflickr.com/1600/900/istana,kesultanan,indragiri,sejarah,indragiri,hilir,riau,indonesia?lock=9261288",
+      "https://loremflickr.com/1600/900/istana,kesultanan,indragiri,sejarah,indragiri,hilir,riau,indonesia?lock=7132648"
+    ],
     "text_for_embedding": "istana kesultanan indragiri peninggalan sejarah kesultanan indragiri yang menjadi ikon budaya lokal sejarah indragiri hilir"
   },
   {
@@ -78,6 +118,11 @@
     "category": "danau",
     "location": "Indragiri Hulu",
     "rating": 4.2,
+    "images": [
+      "https://loremflickr.com/1600/900/danau,raja,danau,indragiri,hulu,riau,indonesia?lock=4414456",
+      "https://loremflickr.com/1600/900/danau,raja,danau,indragiri,hulu,riau,indonesia?lock=372211",
+      "https://loremflickr.com/1600/900/danau,raja,danau,indragiri,hulu,riau,indonesia?lock=488575"
+    ],
     "text_for_embedding": "danau raja danau kota yang kerap dimanfaatkan untuk rekreasi dan kegiatan masyarakat danau indragiri hulu"
   },
   {
@@ -87,6 +132,11 @@
     "category": "taman nasional",
     "location": "Indragiri Hulu",
     "rating": 4.7,
+    "images": [
+      "https://loremflickr.com/1600/900/taman,nasional,bukit,tiga,puluh,taman,nasional,indragiri,hulu,riau,indonesia?lock=8065614",
+      "https://loremflickr.com/1600/900/taman,nasional,bukit,tiga,puluh,taman,nasional,indragiri,hulu,riau,indonesia?lock=4517427",
+      "https://loremflickr.com/1600/900/taman,nasional,bukit,tiga,puluh,taman,nasional,indragiri,hulu,riau,indonesia?lock=4685245"
+    ],
     "text_for_embedding": "taman nasional bukit tiga puluh kawasan hutan hujan tropis dengan keanekaragaman hayati tinggi di perbatasan riau jambi taman nasional indragiri hulu"
   },
   {
@@ -96,6 +146,11 @@
     "category": "cagar budaya",
     "location": "Kampar",
     "rating": 4.8,
+    "images": [
+      "https://loremflickr.com/1600/900/candi,muara,takus,cagar,budaya,kampar,riau,indonesia?lock=389516",
+      "https://loremflickr.com/1600/900/candi,muara,takus,cagar,budaya,kampar,riau,indonesia?lock=6570151",
+      "https://loremflickr.com/1600/900/candi,muara,takus,cagar,budaya,kampar,riau,indonesia?lock=404959"
+    ],
     "text_for_embedding": "candi muara takus kompleks candi buddha bersejarah yang menjadi situs arkeologi penting di riau cagar budaya kampar"
   },
   {
@@ -105,6 +160,11 @@
     "category": "religi",
     "location": "Kampar",
     "rating": 4.5,
+    "images": [
+      "https://loremflickr.com/1600/900/masjid,jami,air,tiris,religi,kampar,riau,indonesia?lock=3114428",
+      "https://loremflickr.com/1600/900/masjid,jami,air,tiris,religi,kampar,riau,indonesia?lock=2880096",
+      "https://loremflickr.com/1600/900/masjid,jami,air,tiris,religi,kampar,riau,indonesia?lock=590972"
+    ],
     "text_for_embedding": "masjid jami air tiris masjid tua berarsitektur melayu yang dikenal sebagai wisata religi di kampar religi kampar"
   },
   {
@@ -114,6 +174,11 @@
     "category": "taman rekreasi",
     "location": "Kampar",
     "rating": 4.0,
+    "images": [
+      "https://loremflickr.com/1600/900/stanum,bangkinang,taman,rekreasi,kampar,riau,indonesia?lock=6696860",
+      "https://loremflickr.com/1600/900/stanum,bangkinang,taman,rekreasi,kampar,riau,indonesia?lock=2369198",
+      "https://loremflickr.com/1600/900/stanum,bangkinang,taman,rekreasi,kampar,riau,indonesia?lock=8042477"
+    ],
     "text_for_embedding": "stanum bangkinang objek wisata keluarga di bangkinang dengan ruang terbuka dan area rekreasi taman rekreasi kampar"
   },
   {
@@ -123,6 +188,11 @@
     "category": "edukasi",
     "location": "Kampar",
     "rating": 3.9,
+    "images": [
+      "https://loremflickr.com/1600/900/kubang,zoo,edukasi,kampar,riau,indonesia?lock=5068533",
+      "https://loremflickr.com/1600/900/kubang,zoo,edukasi,kampar,riau,indonesia?lock=878123",
+      "https://loremflickr.com/1600/900/kubang,zoo,edukasi,kampar,riau,indonesia?lock=7908324"
+    ],
     "text_for_embedding": "kubang zoo kebun binatang mini di wilayah kampar untuk wisata edukasi keluarga edukasi kampar"
   },
   {
@@ -132,6 +202,11 @@
     "category": "pantai",
     "location": "Kepulauan Meranti",
     "rating": 4.3,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,motong,pantai,kepulauan,meranti,riau,indonesia?lock=4698435",
+      "https://loremflickr.com/1600/900/pantai,motong,pantai,kepulauan,meranti,riau,indonesia?lock=6262029",
+      "https://loremflickr.com/1600/900/pantai,motong,pantai,kepulauan,meranti,riau,indonesia?lock=9652886"
+    ],
     "text_for_embedding": "pantai motong pantai populer di kepulauan meranti dengan suasana pesisir yang tenang pantai kepulauan meranti"
   },
   {
@@ -141,6 +216,11 @@
     "category": "pantai",
     "location": "Kepulauan Meranti",
     "rating": 4.1,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,ceria,pantai,kepulauan,meranti,riau,indonesia?lock=7762273",
+      "https://loremflickr.com/1600/900/pantai,ceria,pantai,kepulauan,meranti,riau,indonesia?lock=4829578",
+      "https://loremflickr.com/1600/900/pantai,ceria,pantai,kepulauan,meranti,riau,indonesia?lock=3031600"
+    ],
     "text_for_embedding": "pantai ceria pantai wisata keluarga di kepulauan meranti dengan panorama laut terbuka pantai kepulauan meranti"
   },
   {
@@ -150,6 +230,11 @@
     "category": "danau",
     "location": "Kepulauan Meranti",
     "rating": 4.2,
+    "images": [
+      "https://loremflickr.com/1600/900/tasik,putri,pepuyu,danau,kepulauan,meranti,riau,indonesia?lock=8748703",
+      "https://loremflickr.com/1600/900/tasik,putri,pepuyu,danau,kepulauan,meranti,riau,indonesia?lock=903604",
+      "https://loremflickr.com/1600/900/tasik,putri,pepuyu,danau,kepulauan,meranti,riau,indonesia?lock=6673848"
+    ],
     "text_for_embedding": "tasik putri pepuyu tasik alami di kepulauan meranti yang menjadi daya tarik wisata air danau kepulauan meranti"
   },
   {
@@ -159,6 +244,11 @@
     "category": "danau",
     "location": "Kepulauan Meranti",
     "rating": 4.0,
+    "images": [
+      "https://loremflickr.com/1600/900/tasik,nembus,danau,kepulauan,meranti,riau,indonesia?lock=6589329",
+      "https://loremflickr.com/1600/900/tasik,nembus,danau,kepulauan,meranti,riau,indonesia?lock=9504062",
+      "https://loremflickr.com/1600/900/tasik,nembus,danau,kepulauan,meranti,riau,indonesia?lock=5635613"
+    ],
     "text_for_embedding": "tasik nembus kawasan tasik di meranti yang dikenal dengan panorama rawa dan air tenang danau kepulauan meranti"
   },
   {
@@ -168,6 +258,11 @@
     "category": "danau",
     "location": "Kepulauan Meranti",
     "rating": 4.1,
+    "images": [
+      "https://loremflickr.com/1600/900/tasik,air,putih,danau,kepulauan,meranti,riau,indonesia?lock=4104792",
+      "https://loremflickr.com/1600/900/tasik,air,putih,danau,kepulauan,meranti,riau,indonesia?lock=8816662",
+      "https://loremflickr.com/1600/900/tasik,air,putih,danau,kepulauan,meranti,riau,indonesia?lock=3205603"
+    ],
     "text_for_embedding": "tasik air putih tasik air tawar di kepulauan meranti yang sering dikunjungi wisatawan lokal danau kepulauan meranti"
   },
   {
@@ -177,6 +272,11 @@
     "category": "religi",
     "location": "Kepulauan Meranti",
     "rating": 4.6,
+    "images": [
+      "https://loremflickr.com/1600/900/vihara,sejahtera,sakti,selatpanjang,religi,kepulauan,meranti,riau,indonesia?lock=9213279",
+      "https://loremflickr.com/1600/900/vihara,sejahtera,sakti,selatpanjang,religi,kepulauan,meranti,riau,indonesia?lock=558221",
+      "https://loremflickr.com/1600/900/vihara,sejahtera,sakti,selatpanjang,religi,kepulauan,meranti,riau,indonesia?lock=3009607"
+    ],
     "text_for_embedding": "vihara sejahtera sakti selatpanjang kelenteng tua di selatpanjang yang menjadi ikon religi dan budaya tionghoa riau religi kepulauan meranti"
   },
   {
@@ -186,6 +286,11 @@
     "category": "budaya",
     "location": "Kuantan Singingi",
     "rating": 4.8,
+    "images": [
+      "https://loremflickr.com/1600/900/pacu,jalur,budaya,kuantan,singingi,riau,indonesia?lock=8091329",
+      "https://loremflickr.com/1600/900/pacu,jalur,budaya,kuantan,singingi,riau,indonesia?lock=9327049",
+      "https://loremflickr.com/1600/900/pacu,jalur,budaya,kuantan,singingi,riau,indonesia?lock=2474389"
+    ],
     "text_for_embedding": "pacu jalur atraksi budaya balap perahu tradisional di sungai kuantan yang mendunia budaya kuantan singingi"
   },
   {
@@ -195,6 +300,11 @@
     "category": "air terjun",
     "location": "Kuantan Singingi",
     "rating": 4.6,
+    "images": [
+      "https://loremflickr.com/1600/900/air,terjun,guruh,gemurai,air,terjun,kuantan,singingi,riau,indonesia?lock=4723292",
+      "https://loremflickr.com/1600/900/air,terjun,guruh,gemurai,air,terjun,kuantan,singingi,riau,indonesia?lock=4021268",
+      "https://loremflickr.com/1600/900/air,terjun,guruh,gemurai,air,terjun,kuantan,singingi,riau,indonesia?lock=1423199"
+    ],
     "text_for_embedding": "air terjun guruh gemurai air terjun bertingkat di kuantan singingi dengan kawasan hutan yang asri air terjun kuantan singingi"
   },
   {
@@ -204,6 +314,11 @@
     "category": "air terjun",
     "location": "Kuantan Singingi",
     "rating": 4.2,
+    "images": [
+      "https://loremflickr.com/1600/900/air,terjun,batang,koban,air,terjun,kuantan,singingi,riau,indonesia?lock=2767220",
+      "https://loremflickr.com/1600/900/air,terjun,batang,koban,air,terjun,kuantan,singingi,riau,indonesia?lock=6759285",
+      "https://loremflickr.com/1600/900/air,terjun,batang,koban,air,terjun,kuantan,singingi,riau,indonesia?lock=5014043"
+    ],
     "text_for_embedding": "air terjun batang koban destinasi air terjun alam di kuantan singingi dengan jalur trekking ringan air terjun kuantan singingi"
   },
   {
@@ -213,6 +328,11 @@
     "category": "bukit",
     "location": "Kuantan Singingi",
     "rating": 4.3,
+    "images": [
+      "https://loremflickr.com/1600/900/panorama,bukit,cokiak,bukit,kuantan,singingi,riau,indonesia?lock=6394794",
+      "https://loremflickr.com/1600/900/panorama,bukit,cokiak,bukit,kuantan,singingi,riau,indonesia?lock=7088452",
+      "https://loremflickr.com/1600/900/panorama,bukit,cokiak,bukit,kuantan,singingi,riau,indonesia?lock=3133673"
+    ],
     "text_for_embedding": "panorama bukit cokiak spot panorama perbukitan dengan pemandangan luas kawasan kuantan singingi bukit kuantan singingi"
   },
   {
@@ -222,6 +342,11 @@
     "category": "taman nasional",
     "location": "Pelalawan",
     "rating": 4.7,
+    "images": [
+      "https://loremflickr.com/1600/900/taman,nasional,tesso,nilo,taman,nasional,pelalawan,riau,indonesia?lock=1117633",
+      "https://loremflickr.com/1600/900/taman,nasional,tesso,nilo,taman,nasional,pelalawan,riau,indonesia?lock=589671",
+      "https://loremflickr.com/1600/900/taman,nasional,tesso,nilo,taman,nasional,pelalawan,riau,indonesia?lock=377563"
+    ],
     "text_for_embedding": "taman nasional tesso nilo kawasan konservasi hutan dataran rendah sumatra dengan satwa liar khas taman nasional pelalawan"
   },
   {
@@ -231,6 +356,11 @@
     "category": "sejarah",
     "location": "Pelalawan",
     "rating": 4.2,
+    "images": [
+      "https://loremflickr.com/1600/900/istana,kesultanan,pelalawan,sejarah,pelalawan,riau,indonesia?lock=2476621",
+      "https://loremflickr.com/1600/900/istana,kesultanan,pelalawan,sejarah,pelalawan,riau,indonesia?lock=2571754",
+      "https://loremflickr.com/1600/900/istana,kesultanan,pelalawan,sejarah,pelalawan,riau,indonesia?lock=2446052"
+    ],
     "text_for_embedding": "istana kesultanan pelalawan situs sejarah kesultanan pelalawan yang merekam warisan budaya melayu sejarah pelalawan"
   },
   {
@@ -240,6 +370,11 @@
     "category": "wisata alam",
     "location": "Pelalawan",
     "rating": 4.8,
+    "images": [
+      "https://loremflickr.com/1600/900/ombak,bono,teluk,meranti,wisata,alam,pelalawan,riau,indonesia?lock=1859423",
+      "https://loremflickr.com/1600/900/ombak,bono,teluk,meranti,wisata,alam,pelalawan,riau,indonesia?lock=9431908",
+      "https://loremflickr.com/1600/900/ombak,bono,teluk,meranti,wisata,alam,pelalawan,riau,indonesia?lock=5195240"
+    ],
     "text_for_embedding": "ombak bono teluk meranti fenomena gelombang sungai kampar yang terkenal untuk aktivitas selancar wisata alam pelalawan"
   },
   {
@@ -249,6 +384,11 @@
     "category": "monumen",
     "location": "Pelalawan",
     "rating": 4.0,
+    "images": [
+      "https://loremflickr.com/1600/900/tugu,khatulistiwa,pangkalan,kuras,monumen,pelalawan,riau,indonesia?lock=892776",
+      "https://loremflickr.com/1600/900/tugu,khatulistiwa,pangkalan,kuras,monumen,pelalawan,riau,indonesia?lock=3950428",
+      "https://loremflickr.com/1600/900/tugu,khatulistiwa,pangkalan,kuras,monumen,pelalawan,riau,indonesia?lock=5889341"
+    ],
     "text_for_embedding": "tugu khatulistiwa pangkalan kuras monumen penanda geografis yang menjadi titik singgah wisata di pelalawan monumen pelalawan"
   },
   {
@@ -258,6 +398,11 @@
     "category": "pulau",
     "location": "Rokan Hilir",
     "rating": 4.2,
+    "images": [
+      "https://loremflickr.com/1600/900/kepulauan,arwah,pulau,rokan,hilir,riau,indonesia?lock=1371203",
+      "https://loremflickr.com/1600/900/kepulauan,arwah,pulau,rokan,hilir,riau,indonesia?lock=9897518",
+      "https://loremflickr.com/1600/900/kepulauan,arwah,pulau,rokan,hilir,riau,indonesia?lock=5177457"
+    ],
     "text_for_embedding": "kepulauan arwah gugusan pulau di perairan rokan hilir yang potensial untuk wisata bahari pulau rokan hilir"
   },
   {
@@ -267,6 +412,11 @@
     "category": "pulau",
     "location": "Rokan Hilir",
     "rating": 4.6,
+    "images": [
+      "https://loremflickr.com/1600/900/pulau,jemur,pulau,rokan,hilir,riau,indonesia?lock=2640718",
+      "https://loremflickr.com/1600/900/pulau,jemur,pulau,rokan,hilir,riau,indonesia?lock=9281448",
+      "https://loremflickr.com/1600/900/pulau,jemur,pulau,rokan,hilir,riau,indonesia?lock=1181504"
+    ],
     "text_for_embedding": "pulau jemur destinasi pulau dengan pantai berpasir mercusuar dan habitat penyu pulau rokan hilir"
   },
   {
@@ -276,6 +426,11 @@
     "category": "budaya",
     "location": "Rokan Hilir",
     "rating": 4.7,
+    "images": [
+      "https://loremflickr.com/1600/900/ritual,bakar,tongkang,budaya,rokan,hilir,riau,indonesia?lock=7425862",
+      "https://loremflickr.com/1600/900/ritual,bakar,tongkang,budaya,rokan,hilir,riau,indonesia?lock=9339785",
+      "https://loremflickr.com/1600/900/ritual,bakar,tongkang,budaya,rokan,hilir,riau,indonesia?lock=2403791"
+    ],
     "text_for_embedding": "ritual bakar tongkang festival budaya tahunan di bagansiapiapi yang dikenal secara nasional budaya rokan hilir"
   },
   {
@@ -285,6 +440,11 @@
     "category": "danau",
     "location": "Rokan Hilir",
     "rating": 4.1,
+    "images": [
+      "https://loremflickr.com/1600/900/danau,napangga,danau,rokan,hilir,riau,indonesia?lock=3876447",
+      "https://loremflickr.com/1600/900/danau,napangga,danau,rokan,hilir,riau,indonesia?lock=8706761",
+      "https://loremflickr.com/1600/900/danau,napangga,danau,rokan,hilir,riau,indonesia?lock=1690601"
+    ],
     "text_for_embedding": "danau napangga danau alami di rokan hilir yang menjadi lokasi wisata masyarakat setempat danau rokan hilir"
   },
   {
@@ -294,6 +454,11 @@
     "category": "air terjun",
     "location": "Rokan Hulu",
     "rating": 4.7,
+    "images": [
+      "https://loremflickr.com/1600/900/air,terjun,aek,martua,air,terjun,rokan,hulu,riau,indonesia?lock=6037059",
+      "https://loremflickr.com/1600/900/air,terjun,aek,martua,air,terjun,rokan,hulu,riau,indonesia?lock=2220273",
+      "https://loremflickr.com/1600/900/air,terjun,aek,martua,air,terjun,rokan,hulu,riau,indonesia?lock=512064"
+    ],
     "text_for_embedding": "air terjun aek martua air terjun bertingkat di bangun purba yang dikenal sebagai tangga seribu air terjun rokan hulu"
   },
   {
@@ -303,6 +468,11 @@
     "category": "sejarah",
     "location": "Rokan Hulu",
     "rating": 4.3,
+    "images": [
+      "https://loremflickr.com/1600/900/benteng,tujuh,lapis,sejarah,rokan,hulu,riau,indonesia?lock=9434984",
+      "https://loremflickr.com/1600/900/benteng,tujuh,lapis,sejarah,rokan,hulu,riau,indonesia?lock=7651931",
+      "https://loremflickr.com/1600/900/benteng,tujuh,lapis,sejarah,rokan,hulu,riau,indonesia?lock=125930"
+    ],
     "text_for_embedding": "benteng tujuh lapis situs benteng tanah bersejarah peninggalan perjuangan di wilayah dalu dalu sejarah rokan hulu"
   },
   {
@@ -312,6 +482,11 @@
     "category": "wisata alam",
     "location": "Rokan Hulu",
     "rating": 4.0,
+    "images": [
+      "https://loremflickr.com/1600/900/sumber,air,pawan,wisata,alam,rokan,hulu,riau,indonesia?lock=4120797",
+      "https://loremflickr.com/1600/900/sumber,air,pawan,wisata,alam,rokan,hulu,riau,indonesia?lock=32132",
+      "https://loremflickr.com/1600/900/sumber,air,pawan,wisata,alam,rokan,hulu,riau,indonesia?lock=5838689"
+    ],
     "text_for_embedding": "sumber air pawan objek wisata mata air alami yang dikenal masyarakat rokan hulu wisata alam rokan hulu"
   },
   {
@@ -321,6 +496,11 @@
     "category": "bukit",
     "location": "Rokan Hulu",
     "rating": 4.5,
+    "images": [
+      "https://loremflickr.com/1600/900/bukit,suligi,bukit,rokan,hulu,riau,indonesia?lock=8195249",
+      "https://loremflickr.com/1600/900/bukit,suligi,bukit,rokan,hulu,riau,indonesia?lock=9842395",
+      "https://loremflickr.com/1600/900/bukit,suligi,bukit,rokan,hulu,riau,indonesia?lock=3053432"
+    ],
     "text_for_embedding": "bukit suligi perbukitan dengan jalur pendakian dan panorama sunrise yang menawan bukit rokan hulu"
   },
   {
@@ -330,6 +510,11 @@
     "category": "sejarah",
     "location": "Siak",
     "rating": 4.8,
+    "images": [
+      "https://loremflickr.com/1600/900/istana,siak,sri,indrapura,sejarah,siak,riau,indonesia?lock=8567582",
+      "https://loremflickr.com/1600/900/istana,siak,sri,indrapura,sejarah,siak,riau,indonesia?lock=39589",
+      "https://loremflickr.com/1600/900/istana,siak,sri,indrapura,sejarah,siak,riau,indonesia?lock=1662931"
+    ],
     "text_for_embedding": "istana siak sri indrapura istana kerajaan melayu siak dengan koleksi sejarah dan arsitektur khas sejarah siak"
   },
   {
@@ -339,6 +524,11 @@
     "category": "danau",
     "location": "Siak",
     "rating": 4.4,
+    "images": [
+      "https://loremflickr.com/1600/900/danau,pulau,besar,zamrud,danau,siak,riau,indonesia?lock=3556047",
+      "https://loremflickr.com/1600/900/danau,pulau,besar,zamrud,danau,siak,riau,indonesia?lock=7963073",
+      "https://loremflickr.com/1600/900/danau,pulau,besar,zamrud,danau,siak,riau,indonesia?lock=6609311"
+    ],
     "text_for_embedding": "danau pulau besar zamrud kawasan danau di siak dengan panorama alam dan status suaka margasatwa danau siak"
   },
   {
@@ -348,6 +538,11 @@
     "category": "danau",
     "location": "Siak",
     "rating": 4.3,
+    "images": [
+      "https://loremflickr.com/1600/900/danau,bawah,zamrud,danau,siak,riau,indonesia?lock=8473793",
+      "https://loremflickr.com/1600/900/danau,bawah,zamrud,danau,siak,riau,indonesia?lock=4546041",
+      "https://loremflickr.com/1600/900/danau,bawah,zamrud,danau,siak,riau,indonesia?lock=5043875"
+    ],
     "text_for_embedding": "danau bawah zamrud danau alam di kawasan zamrud yang dikenal dengan bentang lahan basahnya danau siak"
   },
   {
@@ -357,6 +552,11 @@
     "category": "danau",
     "location": "Siak",
     "rating": 4.2,
+    "images": [
+      "https://loremflickr.com/1600/900/danau,naga,sungai,apit,danau,siak,riau,indonesia?lock=6924907",
+      "https://loremflickr.com/1600/900/danau,naga,sungai,apit,danau,siak,riau,indonesia?lock=9355452",
+      "https://loremflickr.com/1600/900/danau,naga,sungai,apit,danau,siak,riau,indonesia?lock=2243287"
+    ],
     "text_for_embedding": "danau naga sungai apit objek wisata danau di siak dengan nilai ekowisata dan keanekaragaman hayati danau siak"
   },
   {
@@ -366,6 +566,11 @@
     "category": "pantai",
     "location": "Dumai",
     "rating": 4.3,
+    "images": [
+      "https://loremflickr.com/1600/900/pantai,teluk,makmur,pantai,dumai,riau,indonesia?lock=4624124",
+      "https://loremflickr.com/1600/900/pantai,teluk,makmur,pantai,dumai,riau,indonesia?lock=4006936",
+      "https://loremflickr.com/1600/900/pantai,teluk,makmur,pantai,dumai,riau,indonesia?lock=8690472"
+    ],
     "text_for_embedding": "pantai teluk makmur pantai utama kota dumai yang menjadi destinasi favorit wisata pesisir pantai dumai"
   },
   {
@@ -375,6 +580,11 @@
     "category": "religi",
     "location": "Pekanbaru",
     "rating": 4.8,
+    "images": [
+      "https://loremflickr.com/1600/900/masjid,agung,an,nur,religi,pekanbaru,riau,indonesia?lock=5341165",
+      "https://loremflickr.com/1600/900/masjid,agung,an,nur,religi,pekanbaru,riau,indonesia?lock=8394256",
+      "https://loremflickr.com/1600/900/masjid,agung,an,nur,religi,pekanbaru,riau,indonesia?lock=8477023"
+    ],
     "text_for_embedding": "masjid agung an nur ikon religi pekanbaru dengan arsitektur megah dan area kompleks luas religi pekanbaru"
   },
   {
@@ -384,6 +594,11 @@
     "category": "edukasi",
     "location": "Pekanbaru",
     "rating": 4.6,
+    "images": [
+      "https://loremflickr.com/1600/900/perpustakaan,soeman,hs,edukasi,pekanbaru,riau,indonesia?lock=1160076",
+      "https://loremflickr.com/1600/900/perpustakaan,soeman,hs,edukasi,pekanbaru,riau,indonesia?lock=8153807",
+      "https://loremflickr.com/1600/900/perpustakaan,soeman,hs,edukasi,pekanbaru,riau,indonesia?lock=2542485"
+    ],
     "text_for_embedding": "perpustakaan soeman hs landmark literasi pekanbaru dengan desain bangunan khas budaya melayu edukasi pekanbaru"
   },
   {
@@ -393,6 +608,11 @@
     "category": "taman rekreasi",
     "location": "Pekanbaru",
     "rating": 4.2,
+    "images": [
+      "https://loremflickr.com/1600/900/alam,mayang,taman,rekreasi,pekanbaru,riau,indonesia?lock=7629817",
+      "https://loremflickr.com/1600/900/alam,mayang,taman,rekreasi,pekanbaru,riau,indonesia?lock=3463511",
+      "https://loremflickr.com/1600/900/alam,mayang,taman,rekreasi,pekanbaru,riau,indonesia?lock=6348197"
+    ],
     "text_for_embedding": "alam mayang taman rekreasi keluarga di pekanbaru dengan danau buatan dan wahana luar ruang taman rekreasi pekanbaru"
   },
   {
@@ -402,6 +622,11 @@
     "category": "wisata kota",
     "location": "Pekanbaru",
     "rating": 4.1,
+    "images": [
+      "https://loremflickr.com/1600/900/pasar,bawah,wisata,kota,pekanbaru,riau,indonesia?lock=6242544",
+      "https://loremflickr.com/1600/900/pasar,bawah,wisata,kota,pekanbaru,riau,indonesia?lock=8853263",
+      "https://loremflickr.com/1600/900/pasar,bawah,wisata,kota,pekanbaru,riau,indonesia?lock=806910"
+    ],
     "text_for_embedding": "pasar bawah kawasan belanja legendaris pekanbaru yang dikenal sebagai wisata urban wisata kota pekanbaru"
   },
   {
@@ -411,6 +636,11 @@
     "category": "danau",
     "location": "Pekanbaru",
     "rating": 4.0,
+    "images": [
+      "https://loremflickr.com/1600/900/danau,limbungan,danau,pekanbaru,riau,indonesia?lock=1641897",
+      "https://loremflickr.com/1600/900/danau,limbungan,danau,pekanbaru,riau,indonesia?lock=8967559",
+      "https://loremflickr.com/1600/900/danau,limbungan,danau,pekanbaru,riau,indonesia?lock=4435679"
+    ],
     "text_for_embedding": "danau limbungan danau di pekanbaru yang sering dijadikan area rekreasi masyarakat lokal danau pekanbaru"
   },
   {
@@ -420,6 +650,11 @@
     "category": "budaya",
     "location": "Pekanbaru",
     "rating": 4.1,
+    "images": [
+      "https://loremflickr.com/1600/900/bandar,serai,budaya,pekanbaru,riau,indonesia?lock=9205356",
+      "https://loremflickr.com/1600/900/bandar,serai,budaya,pekanbaru,riau,indonesia?lock=6772201",
+      "https://loremflickr.com/1600/900/bandar,serai,budaya,pekanbaru,riau,indonesia?lock=9538070"
+    ],
     "text_for_embedding": "bandar serai kawasan budaya dan kegiatan seni yang menjadi ruang publik di pekanbaru budaya pekanbaru"
   },
   {
@@ -429,6 +664,11 @@
     "category": "religi",
     "location": "Pekanbaru",
     "rating": 4.6,
+    "images": [
+      "https://loremflickr.com/1600/900/masjid,raya,senapelan,religi,pekanbaru,riau,indonesia?lock=9049077",
+      "https://loremflickr.com/1600/900/masjid,raya,senapelan,religi,pekanbaru,riau,indonesia?lock=7663017",
+      "https://loremflickr.com/1600/900/masjid,raya,senapelan,religi,pekanbaru,riau,indonesia?lock=9325980"
+    ],
     "text_for_embedding": "masjid raya senapelan masjid bersejarah di kawasan senapelan yang terkait perkembangan awal pekanbaru religi pekanbaru"
   },
   {
@@ -438,6 +678,11 @@
     "category": "edukasi",
     "location": "Pekanbaru",
     "rating": 4.3,
+    "images": [
+      "https://loremflickr.com/1600/900/asia,farm,pekanbaru,edukasi,pekanbaru,riau,indonesia?lock=9338755",
+      "https://loremflickr.com/1600/900/asia,farm,pekanbaru,edukasi,pekanbaru,riau,indonesia?lock=7796602",
+      "https://loremflickr.com/1600/900/asia,farm,pekanbaru,edukasi,pekanbaru,riau,indonesia?lock=4100529"
+    ],
     "text_for_embedding": "asia farm pekanbaru destinasi wisata edukasi modern untuk keluarga dengan konsep peternakan dan taman edukasi pekanbaru"
   },
   {
@@ -447,6 +692,11 @@
     "category": "budaya",
     "location": "Pekanbaru",
     "rating": 4.4,
+    "images": [
+      "https://loremflickr.com/1600/900/rumah,tenun,kampung,bandar,budaya,pekanbaru,riau,indonesia?lock=6124914",
+      "https://loremflickr.com/1600/900/rumah,tenun,kampung,bandar,budaya,pekanbaru,riau,indonesia?lock=2413860",
+      "https://loremflickr.com/1600/900/rumah,tenun,kampung,bandar,budaya,pekanbaru,riau,indonesia?lock=8369567"
+    ],
     "text_for_embedding": "rumah tenun kampung bandar wisata budaya yang menampilkan kerajinan tenun tradisional melayu di pekanbaru budaya pekanbaru"
   },
   {
@@ -456,6 +706,11 @@
     "category": "sejarah",
     "location": "Pekanbaru",
     "rating": 3.9,
+    "images": [
+      "https://loremflickr.com/1600/900/batu,gajah,sejarah,pekanbaru,riau,indonesia?lock=8675690",
+      "https://loremflickr.com/1600/900/batu,gajah,sejarah,pekanbaru,riau,indonesia?lock=2210801",
+      "https://loremflickr.com/1600/900/batu,gajah,sejarah,pekanbaru,riau,indonesia?lock=9699607"
+    ],
     "text_for_embedding": "batu gajah situs lokal di pekanbaru yang dikenal sebagai titik sejarah dan cerita rakyat sejarah pekanbaru"
   }
 ]

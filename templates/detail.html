@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ destination.name }} - Detail Destinasi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="page detail-page">
+      <section class="hero detail-hero">
+        <a class="back-link" href="/">Kembali ke pencarian</a>
+        <p class="eyebrow">Detail Destinasi</p>
+        <h1>{{ destination.name }}</h1>
+        <p class="subtitle">{{ destination.description }}</p>
+        <div class="chip-row">
+          <span class="chip">Kategori: {{ destination.category }}</span>
+          <span class="chip">Lokasi: {{ destination.location }}</span>
+          <span class="chip">Rating: {{ destination.rating }}</span>
+        </div>
+      </section>
+
+      <section class="result-card">
+        <div class="result-head">
+          <h2>Galeri Destinasi</h2>
+          <p id="result-summary">Minimal 3 gambar sesuai data destinasi.</p>
+        </div>
+
+        <div class="detail-gallery">
+          {% for image in destination.images[:3] %}
+          <img
+            src="{{ image }}"
+            alt="{{ destination.name }} - gambar {{ loop.index }}"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            onerror="this.onerror=null;this.src='{{ destination.fallback_images[loop.index0] if destination.fallback_images else '/static/fallback-destination.svg' }}';"
+          />
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

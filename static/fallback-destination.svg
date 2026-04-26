@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Gambar Destinasi</title>
+  <desc id="desc">Placeholder gambar destinasi wisata Riau</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9edf4"/>
+      <stop offset="100%" stop-color="#f7efe1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="80" fill="#f2b35f" opacity="0.55"/>
+  <path d="M0 510 Q220 420 420 500 T860 500 T1200 520 L1200 700 L0 700 Z" fill="#7fb5c9" opacity="0.45"/>
+  <path d="M0 560 Q230 490 450 560 T900 560 T1200 590 L1200 700 L0 700 Z" fill="#4e93ad" opacity="0.35"/>
+  <text x="600" y="330" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="46" font-weight="700" fill="#24576c">Gambar destinasi belum tersedia</text>
+  <text x="600" y="380" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="28" fill="#356b82">Sistem menampilkan gambar cadangan otomatis</text>
+</svg>

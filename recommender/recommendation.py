@@ -4,7 +4,7 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 
 from recommender.config import EMBEDDINGS_PATH, MODEL_NAME, PROCESSED_DATA_PATH, TOP_N_DEFAULT
-from recommender.data_pipeline import clean_text, load_processed_data
+from recommender.data_pipeline import clean_text, load_processed_data, normalize_images
 from recommender.embedding_store import load_embeddings
 
 
@@ -16,6 +16,8 @@ class DestinationResult:
     category: str
     location: str
     rating: float
+    images: list[str]
+    fallback_images: list[str]
     score: float
 
 
@@ -43,6 +45,7 @@ class DestinationRecommender:
         recommendations: list[DestinationResult] = []
         for index in top_indices:
             row = self.data[index]
+            images, fallback_images = normalize_images(row)
             recommendations.append(
                 DestinationResult(
                     id=row["id"],
@@ -51,6 +54,8 @@ class DestinationRecommender:
                     category=row["category"],
                     location=row["location"],
                     rating=float(row["rating"]),
+                    images=images,
+                    fallback_images=fallback_images,
                     score=float(similarity_scores[index]),
                 )
             )

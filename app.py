@@ -1,8 +1,9 @@
 from dataclasses import asdict
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, abort, jsonify, render_template, request
 
 from recommender.config import EMBEDDINGS_PATH, PROCESSED_DATA_PATH
+from recommender.data_pipeline import normalize_images
 from recommender.recommendation import DestinationRecommender
 
 app = Flask(__name__)
@@ -12,6 +13,14 @@ recommender: DestinationRecommender | None = None
 @app.get("/")
 def index() -> str:
     return render_template("index.html")
+
+
+@app.get("/destination/<destination_id>")
+def destination_detail(destination_id: str) -> str:
+    destination = find_destination_by_id(destination_id)
+    if destination is None:
+        abort(404)
+    return render_template("detail.html", destination=destination)
 
 
 @app.post("/recommend")
@@ -38,6 +47,20 @@ def init_recommender() -> None:
             "Run scripts/preprocess.py then scripts/build_embeddings.py"
         )
     recommender = DestinationRecommender()
+
+
+def find_destination_by_id(destination_id: str) -> dict | None:
+    if recommender is None:
+        return None
+
+    for row in recommender.data:
+        if row.get("id") == destination_id:
+            destination = dict(row)
+            images, fallback_images = normalize_images(destination)
+            destination["images"] = images
+            destination["fallback_images"] = fallback_images
+            return destination
+    return None
 
 
 if __name__ == "__main__":
