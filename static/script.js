@@ -2,6 +2,37 @@ const form = document.getElementById("recommend-form");
 const resultsList = document.getElementById("results");
 const resultSummary = document.getElementById("result-summary");
 
+function handleImageError(img) {
+  const fallback1 = img.getAttribute('data-fallback1');
+  const fallback2 = img.getAttribute('data-fallback2');
+  
+  // Prevent infinite loop
+  if (img.dataset.retryCount === undefined) {
+    img.dataset.retryCount = 0;
+  }
+  
+  img.dataset.retryCount = parseInt(img.dataset.retryCount) + 1;
+  
+  // Try fallback1 first (Picsum - more reliable)
+  if (img.dataset.retryCount === 1 && fallback1) {
+    img.src = fallback1;
+    img.onerror = function() { handleImageError(this); };
+  }
+  // Then try fallback2 (local SVG)
+  else if (img.dataset.retryCount === 2 && fallback2) {
+    img.src = fallback2;
+    img.onerror = null; // Stop retrying
+  }
+  // Final fallback - show placeholder background
+  else {
+    img.style.backgroundColor = '#f0f0f0';
+    img.style.display = 'flex';
+    img.style.alignItems = 'center';
+    img.style.justifyContent = 'center';
+    img.alt = 'Gambar tidak tersedia';
+  }
+}
+
 function renderResults(results) {
   resultsList.innerHTML = "";
 
@@ -25,9 +56,9 @@ function renderResults(results) {
       ? `<div class="gallery">${images
           .map(
             (src, index) =>
-              `<img src="${src}" alt="${item.name} - gambar ${index + 1}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${
-                fallbackImages[index] || "/static/fallback-destination.svg"
-              }';" />`
+              `<img src="${src}" alt="${item.name} - gambar ${index + 1}" loading="lazy" referrerpolicy="no-referrer" data-fallback1="${
+                fallbackImages[index] || ""
+              }" data-fallback2="/static/fallback-destination.svg" onerror="handleImageError(this);" />`
           )
           .join("")}</div>`
       : "";

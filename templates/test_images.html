@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Image Loading</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 10px; border: 1px solid #ddd; }
+        img { max-width: 400px; margin: 10px 0; border: 2px solid #ccc; }
+        .url { word-break: break-all; font-size: 12px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Test URL Accessibility</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Unsplash Direct URL</h2>
+        <p>URL: <span class="url">https://source.unsplash.com/1600x900/?beach%2C+pantai%2C+seaside%2C+coast&sig=test-1</span></p>
+        <img src="https://source.unsplash.com/1600x900/?beach%2C+pantai%2C+seaside%2C+coast&sig=test-1" 
+             alt="Test Unsplash"
+             onerror="this.parentElement.innerHTML += '<p style=\"color:red\">❌ Failed to load</p>'"
+             onload="this.parentElement.innerHTML += '<p style=\"color:green\">✓ Loaded successfully</p>'">
+    </div>
+
+    <div class="test-section">
+        <h2>Test 2: Check Fetch Access</h2>
+        <div id="fetch-result"></div>
+    </div>
+
+    <script>
+        // Test if we can fetch the URL
+        const testUrl = 'https://source.unsplash.com/1600x900/?beach%2C+pantai%2C+seaside%2C+coast&sig=test-1';
+        
+        fetch(testUrl, { mode: 'no-cors' })
+            .then(response => {
+                document.getElementById('fetch-result').innerHTML = 
+                    '<p style="color:green">✓ Fetch succeeded (status: ' + response.status + ')</p>';
+            })
+            .catch(error => {
+                document.getElementById('fetch-result').innerHTML = 
+                    '<p style="color:red">❌ Fetch failed: ' + error.message + '</p>';
+            });
+    </script>
+</body>
+</html>

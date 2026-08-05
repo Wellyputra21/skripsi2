@@ -6,11 +6,7 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.7,
-    "images": [
-      "https://loremflickr.com/1600/900/pantai,rupat,utara,pantai,bengkalis,riau,indonesia?lock=8799179",
-      "https://loremflickr.com/1600/900/pantai,rupat,utara,pantai,bengkalis,riau,indonesia?lock=254188",
-      "https://loremflickr.com/1600/900/pantai,rupat,utara,pantai,bengkalis,riau,indonesia?lock=7558322"
-    ]
+    "images": []
   },
   {
     "id": "riau-002",
@@ -20,9 +16,9 @@
     "location": "Bengkalis",
     "rating": 4.5,
     "images": [
-      "https://loremflickr.com/1600/900/pantai,lapin,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=1197060",
-      "https://loremflickr.com/1600/900/pantai,lapin,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=6952994",
-      "https://loremflickr.com/1600/900/pantai,lapin,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=5130523"
+      "/static/images/Bengkalis/Pantai%20Lapin%20Tanjung%20Punak/punak1.jpg",
+      "/static/images/Bengkalis/Pantai%20Lapin%20Tanjung%20Punak/PUNAK2.jpg",
+      "/static/images/Bengkalis/Pantai%20Lapin%20Tanjung%20Punak/punak3.jpg"
     ]
   },
   {
@@ -32,11 +28,7 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.4,
-    "images": [
-      "https://loremflickr.com/1600/900/pantai,cemara,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=1419667",
-      "https://loremflickr.com/1600/900/pantai,cemara,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=6497847",
-      "https://loremflickr.com/1600/900/pantai,cemara,tanjung,punak,pantai,bengkalis,riau,indonesia?lock=5666043"
-    ]
+    "images": []
   },
   {
     "id": "riau-004",
@@ -45,11 +37,7 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.4,
-    "images": [
-      "https://loremflickr.com/1600/900/pantai,selatbaru,pantai,bengkalis,riau,indonesia?lock=7012119",
-      "https://loremflickr.com/1600/900/pantai,selatbaru,pantai,bengkalis,riau,indonesia?lock=1098955",
-      "https://loremflickr.com/1600/900/pantai,selatbaru,pantai,bengkalis,riau,indonesia?lock=8685176"
-    ]
+    "images": []
   },
   {
     "id": "riau-005",
@@ -58,11 +46,7 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.3,
-    "images": [
-      "https://loremflickr.com/1600/900/pantai,ketapang,rupat,timur,pantai,bengkalis,riau,indonesia?lock=8117118",
-      "https://loremflickr.com/1600/900/pantai,ketapang,rupat,timur,pantai,bengkalis,riau,indonesia?lock=3841901",
-      "https://loremflickr.com/1600/900/pantai,ketapang,rupat,timur,pantai,bengkalis,riau,indonesia?lock=1682615"
-    ]
+    "images": []
   },
   {
     "id": "riau-006",
@@ -71,11 +55,7 @@
     "category": "pantai",
     "location": "Bengkalis",
     "rating": 4.2,
-    "images": [
-      "https://loremflickr.com/1600/900/pantai,makruh,rupat,timur,pantai,bengkalis,riau,indonesia?lock=6014954",
-      "https://loremflickr.com/1600/900/pantai,makruh,rupat,timur,pantai,bengkalis,riau,indonesia?lock=2665179",
-      "https://loremflickr.com/1600/900/pantai,makruh,rupat,timur,pantai,bengkalis,riau,indonesia?lock=2171464"
-    ]
+    "images": []
   },
   {
     "id": "riau-007",
@@ -84,11 +64,7 @@
     "category": "konservasi",
     "location": "Bengkalis",
     "rating": 4.6,
-    "images": [
-      "https://loremflickr.com/1600/900/cagar,biosfer,giam,siak,kecil,bukit,batu,konservasi,bengkalis,riau,indonesia?lock=6465179",
-      "https://loremflickr.com/1600/900/cagar,biosfer,giam,siak,kecil,bukit,batu,konservasi,bengkalis,riau,indonesia?lock=7556914",
-      "https://loremflickr.com/1600/900/cagar,biosfer,giam,siak,kecil,bukit,batu,konservasi,bengkalis,riau,indonesia?lock=292609"
-    ]
+    "images": []
   },
   {
     "id": "riau-008",
@@ -97,11 +73,7 @@
     "category": "sejarah",
     "location": "Indragiri Hilir",
     "rating": 4.3,
-    "images": [
-      "https://loremflickr.com/1600/900/istana,kesultanan,indragiri,sejarah,indragiri,hilir,riau,indonesia?lock=2070109",
-      "https://loremflickr.com/1600/900/istana,kesultanan,indragiri,sejarah,indragiri,hilir,riau,indonesia?lock=9261288",
-      "https://loremflickr.com/1600/900/istana,kesultanan,indragiri,sejarah,indragiri,hilir,riau,indonesia?lock=7132648"
-    ]
+    "images": []
   },
   {
     "id": "riau-009",
@@ -110,11 +82,7 @@
     "category": "danau",
     "location": "Indragiri Hulu",
     "rating": 4.2,
-    "images": [
-      "https://loremflickr.com/1600/900/danau,raja,danau,indragiri,hulu,riau,indonesia?lock=4414456",
-      "https://loremflickr.com/1600/900/danau,raja,danau,indragiri,hulu,riau,indonesia?lock=372211",
-      "https://loremflickr.com/1600/900/danau,raja,danau,indragiri,hulu,riau,indonesia?lock=488575"
-    ]
+    "images": []
   },
   {
     "id": "riau-010",
@@ -123,11 +91,7 @@
     "category": "taman nasional",
     "location": "Indragiri Hulu",
     "rating": 4.7,
-    "images": [
-      "https://loremflickr.com/1600/900/taman,nasional,bukit,tiga,puluh,taman,nasional,indragiri,hulu,riau,indonesia?lock=8065614",
-      "https://loremflickr.com/1600/900/taman,nasional,bukit,tiga,puluh,taman,nasional,indragiri,hulu,riau,indonesia?lock=4517427",
-      "https://loremflickr.com/1600/900/taman,nasional,bukit,tiga,puluh,taman,nasional,indragiri,hulu,riau,indonesia?lock=4685245"
-    ]
+    "images": []
   },
   {
     "id": "riau-011",
@@ -136,11 +100,7 @@
     "category": "cagar budaya",
     "location": "Kampar",
     "rating": 4.8,
-    "images": [
-      "https://loremflickr.com/1600/900/candi,muara,takus,cagar,budaya,kampar,riau,indonesia?lock=389516",
-      "https://loremflickr.com/1600/900/candi,muara,takus,cagar,budaya,kampar,riau,indonesia?lock=6570151",
-      "https://loremflickr.com/1600/900/candi,muara,takus,cagar,budaya,kampar,riau,indonesia?lock=404959"
-    ]
+    "images": []
   },
   {
     "id": "riau-012",
@@ -149,11 +109,7 @@
     "category": "religi",
     "location": "Kampar",
     "rating": 4.5,
-    "images": [
-      "https://loremflickr.com/1600/900/masjid,jami,air,tiris,religi,kampar,riau,indonesia?lock=3114428",
-      "https://loremflickr.com/1600/900/masjid,jami,air,tiris,religi,kampar,riau,indonesia?lock=2880096",
-      "https://loremflickr.com/1600/900/masjid,jami,air,tiris,religi,kampar,riau,indonesia?lock=590972"
-    ]
+    "images": []
   },
   {
     "id": "riau-013",
@@ -162,11 +118,7 @@
     "category": "taman rekreasi",
     "location": "Kampar",
     "rating": 4.0,
-    "images": [
-      "https://loremflickr.com/1600/900/stanum,bangkinang,taman,rekreasi,kampar,riau,indonesia?lock=6696860",
-      "https://loremflickr.com/1600/900/stanum,bangkinang,taman,rekreasi,kampar,riau,indonesia?lock=2369198",
-      "https://loremflickr.com/1600/900/stanum,bangkinang,taman,rekreasi,kampar,riau,indonesia?lock=8042477"
-    ]
+    "images": []
   },
   {
     "id": "riau-014",
@@ -175,11 +127,7 @@
     "category": "edukasi",
     "location": "Kampar",
     "rating": 3.9,
-    "images": [
-      "https://loremflickr.com/1600/900/kubang,zoo,edukasi,kampar,riau,indonesia?lock=5068533",
-      "https://loremflickr.com/1600/900/kubang,zoo,edukasi,kampar,riau,indonesia?lock=878123",
-      "https://loremflickr.com/1600/900/kubang,zoo,edukasi,kampar,riau,indonesia?lock=7908324"
-    ]
+    "images": []
   },
   {
     "id": "riau-015",
@@ -188,11 +136,7 @@
     "category": "pantai",
     "location": "Kepulauan Meranti",
     "rating": 4.3,
-    "images": [
-      "https://loremflickr.com/1600/900/pantai,motong,pantai,kepulauan,meranti,riau,indonesia?lock=4698435",
-      "https://loremflickr.com/1600/900/pantai,motong,pantai,kepulauan,meranti,riau,indonesia?lock=6262029",
-      "https://loremflickr.com/1600/900/pantai,motong,pantai,kepulauan,meranti,riau,indonesia?lock=9652886"
-    ]
+    "images": []
   },
   {
     "id": "riau-016",
@@ -201,11 +145,7 @@
     "category": "pantai",
     "location": "Kepulauan Meranti",
     "rating": 4.1,
-    "images": [
-      "https://loremflickr.com/1600/900/pantai,ceria,pantai,kepulauan,meranti,riau,indonesia?lock=7762273",
-      "https://loremflickr.com/1600/900/pantai,ceria,pantai,kepulauan,meranti,riau,indonesia?lock=4829578",
-      "https://loremflickr.com/1600/900/pantai,ceria,pantai,kepulauan,meranti,riau,indonesia?lock=3031600"
-    ]
+    "images": []
   },
   {
     "id": "riau-017",
@@ -214,11 +154,7 @@
     "category": "danau",
     "location": "Kepulauan Meranti",
     "rating": 4.2,
-    "images": [
-      "https://loremflickr.com/1600/900/tasik,putri,pepuyu,danau,kepulauan,meranti,riau,indonesia?lock=8748703",
-      "https://loremflickr.com/1600/900/tasik,putri,pepuyu,danau,kepulauan,meranti,riau,indonesia?lock=903604",
-      "https://loremflickr.com/1600/900/tasik,putri,pepuyu,danau,kepulauan,meranti,riau,indonesia?lock=6673848"
-    ]
+    "images": []
   },
   {
     "id": "riau-018",
@@ -227,11 +163,7 @@
     "category": "danau",
     "location": "Kepulauan Meranti",
     "rating": 4.0,
-    "images": [
-      "https://loremflickr.com/1600/900/tasik,nembus,danau,kepulauan,meranti,riau,indonesia?lock=6589329",
-      "https://loremflickr.com/1600/900/tasik,nembus,danau,kepulauan,meranti,riau,indonesia?lock=9504062",
-      "https://loremflickr.com/1600/900/tasik,nembus,danau,kepulauan,meranti,riau,indonesia?lock=5635613"
-    ]
+    "images": []
   },
   {
     "id": "riau-019",
@@ -240,11 +172,7 @@
     "category": "danau",
     "location": "Kepulauan Meranti",
     "rating": 4.1,
-    "images": [
-      "https://loremflickr.com/1600/900/tasik,air,putih,danau,kepulauan,meranti,riau,indonesia?lock=4104792",
-      "https://loremflickr.com/1600/900/tasik,air,putih,danau,kepulauan,meranti,riau,indonesia?lock=8816662",
-      "https://loremflickr.com/1600/900/tasik,air,putih,danau,kepulauan,meranti,riau,indonesia?lock=3205603"
-    ]
+    "images": []
   },
   {
     "id": "riau-020",
@@ -253,11 +181,7 @@
     "category": "religi",
     "location": "Kepulauan Meranti",
     "rating": 4.6,
-    "images": [
-      "https://loremflickr.com/1600/900/vihara,sejahtera,sakti,selatpanjang,religi,kepulauan,meranti,riau,indonesia?lock=9213279",
-      "https://loremflickr.com/1600/900/vihara,sejahtera,sakti,selatpanjang,religi,kepulauan,meranti,riau,indonesia?lock=558221",
-      "https://loremflickr.com/1600/900/vihara,sejahtera,sakti,selatpanjang,religi,kepulauan,meranti,riau,indonesia?lock=3009607"
-    ]
+    "images": []
   },
   {
     "id": "riau-021",
@@ -266,11 +190,7 @@
     "category": "budaya",
     "location": "Kuantan Singingi",
     "rating": 4.8,
-    "images": [
-      "https://loremflickr.com/1600/900/pacu,jalur,budaya,kuantan,singingi,riau,indonesia?lock=8091329",
-      "https://loremflickr.com/1600/900/pacu,jalur,budaya,kuantan,singingi,riau,indonesia?lock=9327049",
-      "https://loremflickr.com/1600/900/pacu,jalur,budaya,kuantan,singingi,riau,indonesia?lock=2474389"
-    ]
+    "images": []
   },
   {
     "id": "riau-022",
@@ -279,11 +199,7 @@
     "category": "air terjun",
     "location": "Kuantan Singingi",
     "rating": 4.6,
-    "images": [
-      "https://loremflickr.com/1600/900/air,terjun,guruh,gemurai,air,terjun,kuantan,singingi,riau,indonesia?lock=4723292",
-      "https://loremflickr.com/1600/900/air,terjun,guruh,gemurai,air,terjun,kuantan,singingi,riau,indonesia?lock=4021268",
-      "https://loremflickr.com/1600/900/air,terjun,guruh,gemurai,air,terjun,kuantan,singingi,riau,indonesia?lock=1423199"
-    ]
+    "images": []
   },
   {
     "id": "riau-023",
@@ -292,11 +208,7 @@
     "category": "air terjun",
     "location": "Kuantan Singingi",
     "rating": 4.2,
-    "images": [
-      "https://loremflickr.com/1600/900/air,terjun,batang,koban,air,terjun,kuantan,singingi,riau,indonesia?lock=2767220",
-      "https://loremflickr.com/1600/900/air,terjun,batang,koban,air,terjun,kuantan,singingi,riau,indonesia?lock=6759285",
-      "https://loremflickr.com/1600/900/air,terjun,batang,koban,air,terjun,kuantan,singingi,riau,indonesia?lock=5014043"
-    ]
+    "images": []
   },
   {
     "id": "riau-024",
@@ -305,11 +217,7 @@
     "category": "bukit",
     "location": "Kuantan Singingi",
     "rating": 4.3,
-    "images": [
-      "https://loremflickr.com/1600/900/panorama,bukit,cokiak,bukit,kuantan,singingi,riau,indonesia?lock=6394794",
-      "https://loremflickr.com/1600/900/panorama,bukit,cokiak,bukit,kuantan,singingi,riau,indonesia?lock=7088452",
-      "https://loremflickr.com/1600/900/panorama,bukit,cokiak,bukit,kuantan,singingi,riau,indonesia?lock=3133673"
-    ]
+    "images": []
   },
   {
     "id": "riau-025",
@@ -318,11 +226,7 @@
     "category": "taman nasional",
     "location": "Pelalawan",
     "rating": 4.7,
-    "images": [
-      "https://loremflickr.com/1600/900/taman,nasional,tesso,nilo,taman,nasional,pelalawan,riau,indonesia?lock=1117633",
-      "https://loremflickr.com/1600/900/taman,nasional,tesso,nilo,taman,nasional,pelalawan,riau,indonesia?lock=589671",
-      "https://loremflickr.com/1600/900/taman,nasional,tesso,nilo,taman,nasional,pelalawan,riau,indonesia?lock=377563"
-    ]
+    "images": []
   },
   {
     "id": "riau-026",
@@ -331,11 +235,7 @@
     "category": "sejarah",
     "location": "Pelalawan",
     "rating": 4.2,
-    "images": [
-      "https://loremflickr.com/1600/900/istana,kesultanan,pelalawan,sejarah,pelalawan,riau,indonesia?lock=2476621",
-      "https://loremflickr.com/1600/900/istana,kesultanan,pelalawan,sejarah,pelalawan,riau,indonesia?lock=2571754",
-      "https://loremflickr.com/1600/900/istana,kesultanan,pelalawan,sejarah,pelalawan,riau,indonesia?lock=2446052"
-    ]
+    "images": []
   },
   {
     "id": "riau-027",
@@ -344,11 +244,7 @@
     "category": "wisata alam",
     "location": "Pelalawan",
     "rating": 4.8,
-    "images": [
-      "https://loremflickr.com/1600/900/ombak,bono,teluk,meranti,wisata,alam,pelalawan,riau,indonesia?lock=1859423",
-      "https://loremflickr.com/1600/900/ombak,bono,teluk,meranti,wisata,alam,pelalawan,riau,indonesia?lock=9431908",
-      "https://loremflickr.com/1600/900/ombak,bono,teluk,meranti,wisata,alam,pelalawan,riau,indonesia?lock=5195240"
-    ]
+    "images": []
   },
   {
     "id": "riau-028",
@@ -357,11 +253,7 @@
     "category": "monumen",
     "location": "Pelalawan",
     "rating": 4.0,
-    "images": [
-      "https://loremflickr.com/1600/900/tugu,khatulistiwa,pangkalan,kuras,monumen,pelalawan,riau,indonesia?lock=892776",
-      "https://loremflickr.com/1600/900/tugu,khatulistiwa,pangkalan,kuras,monumen,pelalawan,riau,indonesia?lock=3950428",
-      "https://loremflickr.com/1600/900/tugu,khatulistiwa,pangkalan,kuras,monumen,pelalawan,riau,indonesia?lock=5889341"
-    ]
+    "images": []
   },
   {
     "id": "riau-029",
@@ -370,11 +262,7 @@
     "category": "pulau",
     "location": "Rokan Hilir",
     "rating": 4.2,
-    "images": [
-      "https://loremflickr.com/1600/900/kepulauan,arwah,pulau,rokan,hilir,riau,indonesia?lock=1371203",
-      "https://loremflickr.com/1600/900/kepulauan,arwah,pulau,rokan,hilir,riau,indonesia?lock=9897518",
-      "https://loremflickr.com/1600/900/kepulauan,arwah,pulau,rokan,hilir,riau,indonesia?lock=5177457"
-    ]
+    "images": []
   },
   {
     "id": "riau-030",
@@ -383,11 +271,7 @@
     "category": "pulau",
     "location": "Rokan Hilir",
     "rating": 4.6,
-    "images": [
-      "https://loremflickr.com/1600/900/pulau,jemur,pulau,rokan,hilir,riau,indonesia?lock=2640718",
-      "https://loremflickr.com/1600/900/pulau,jemur,pulau,rokan,hilir,riau,indonesia?lock=9281448",
-      "https://loremflickr.com/1600/900/pulau,jemur,pulau,rokan,hilir,riau,indonesia?lock=1181504"
-    ]
+    "images": []
   },
   {
     "id": "riau-031",
@@ -396,11 +280,7 @@
     "category": "budaya",
     "location": "Rokan Hilir",
     "rating": 4.7,
-    "images": [
-      "https://loremflickr.com/1600/900/ritual,bakar,tongkang,budaya,rokan,hilir,riau,indonesia?lock=7425862",
-      "https://loremflickr.com/1600/900/ritual,bakar,tongkang,budaya,rokan,hilir,riau,indonesia?lock=9339785",
-      "https://loremflickr.com/1600/900/ritual,bakar,tongkang,budaya,rokan,hilir,riau,indonesia?lock=2403791"
-    ]
+    "images": []
   },
   {
     "id": "riau-032",
@@ -409,11 +289,7 @@
     "category": "danau",
     "location": "Rokan Hilir",
     "rating": 4.1,
-    "images": [
-      "https://loremflickr.com/1600/900/danau,napangga,danau,rokan,hilir,riau,indonesia?lock=3876447",
-      "https://loremflickr.com/1600/900/danau,napangga,danau,rokan,hilir,riau,indonesia?lock=8706761",
-      "https://loremflickr.com/1600/900/danau,napangga,danau,rokan,hilir,riau,indonesia?lock=1690601"
-    ]
+    "images": []
   },
   {
     "id": "riau-033",
@@ -422,11 +298,7 @@
     "category": "air terjun",
     "location": "Rokan Hulu",
     "rating": 4.7,
-    "images": [
-      "https://loremflickr.com/1600/900/air,terjun,aek,martua,air,terjun,rokan,hulu,riau,indonesia?lock=6037059",
-      "https://loremflickr.com/1600/900/air,terjun,aek,martua,air,terjun,rokan,hulu,riau,indonesia?lock=2220273",
-      "https://loremflickr.com/1600/900/air,terjun,aek,martua,air,terjun,rokan,hulu,riau,indonesia?lock=512064"
-    ]
+    "images": []
   },
   {
     "id": "riau-034",
@@ -435,11 +307,7 @@
     "category": "sejarah",
     "location": "Rokan Hulu",
     "rating": 4.3,
-    "images": [
-      "https://loremflickr.com/1600/900/benteng,tujuh,lapis,sejarah,rokan,hulu,riau,indonesia?lock=9434984",
-      "https://loremflickr.com/1600/900/benteng,tujuh,lapis,sejarah,rokan,hulu,riau,indonesia?lock=7651931",
-      "https://loremflickr.com/1600/900/benteng,tujuh,lapis,sejarah,rokan,hulu,riau,indonesia?lock=125930"
-    ]
+    "images": []
   },
   {
     "id": "riau-035",
@@ -448,11 +316,7 @@
     "category": "wisata alam",
     "location": "Rokan Hulu",
     "rating": 4.0,
-    "images": [
-      "https://loremflickr.com/1600/900/sumber,air,pawan,wisata,alam,rokan,hulu,riau,indonesia?lock=4120797",
-      "https://loremflickr.com/1600/900/sumber,air,pawan,wisata,alam,rokan,hulu,riau,indonesia?lock=32132",
-      "https://loremflickr.com/1600/900/sumber,air,pawan,wisata,alam,rokan,hulu,riau,indonesia?lock=5838689"
-    ]
+    "images": []
   },
   {
     "id": "riau-036",
@@ -461,11 +325,7 @@
     "category": "bukit",
     "location": "Rokan Hulu",
     "rating": 4.5,
-    "images": [
-      "https://loremflickr.com/1600/900/bukit,suligi,bukit,rokan,hulu,riau,indonesia?lock=8195249",
-      "https://loremflickr.com/1600/900/bukit,suligi,bukit,rokan,hulu,riau,indonesia?lock=9842395",
-      "https://loremflickr.com/1600/900/bukit,suligi,bukit,rokan,hulu,riau,indonesia?lock=3053432"
-    ]
+    "images": []
   },
   {
     "id": "riau-037",
@@ -474,11 +334,7 @@
     "category": "sejarah",
     "location": "Siak",
     "rating": 4.8,
-    "images": [
-      "https://loremflickr.com/1600/900/istana,siak,sri,indrapura,sejarah,siak,riau,indonesia?lock=8567582",
-      "https://loremflickr.com/1600/900/istana,siak,sri,indrapura,sejarah,siak,riau,indonesia?lock=39589",
-      "https://loremflickr.com/1600/900/istana,siak,sri,indrapura,sejarah,siak,riau,indonesia?lock=1662931"
-    ]
+    "images": []
   },
   {
     "id": "riau-038",
@@ -487,11 +343,7 @@
     "category": "danau",
     "location": "Siak",
     "rating": 4.4,
-    "images": [
-      "https://loremflickr.com/1600/900/danau,pulau,besar,zamrud,danau,siak,riau,indonesia?lock=3556047",
-      "https://loremflickr.com/1600/900/danau,pulau,besar,zamrud,danau,siak,riau,indonesia?lock=7963073",
-      "https://loremflickr.com/1600/900/danau,pulau,besar,zamrud,danau,siak,riau,indonesia?lock=6609311"
-    ]
+    "images": []
   },
   {
     "id": "riau-039",
@@ -500,11 +352,7 @@
     "category": "danau",
     "location": "Siak",
     "rating": 4.3,
-    "images": [
-      "https://loremflickr.com/1600/900/danau,bawah,zamrud,danau,siak,riau,indonesia?lock=8473793",
-      "https://loremflickr.com/1600/900/danau,bawah,zamrud,danau,siak,riau,indonesia?lock=4546041",
-      "https://loremflickr.com/1600/900/danau,bawah,zamrud,danau,siak,riau,indonesia?lock=5043875"
-    ]
+    "images": []
   },
   {
     "id": "riau-040",
@@ -513,11 +361,7 @@
     "category": "danau",
     "location": "Siak",
     "rating": 4.2,
-    "images": [
-      "https://loremflickr.com/1600/900/danau,naga,sungai,apit,danau,siak,riau,indonesia?lock=6924907",
-      "https://loremflickr.com/1600/900/danau,naga,sungai,apit,danau,siak,riau,indonesia?lock=9355452",
-      "https://loremflickr.com/1600/900/danau,naga,sungai,apit,danau,siak,riau,indonesia?lock=2243287"
-    ]
+    "images": []
   },
   {
     "id": "riau-041",
@@ -526,11 +370,7 @@
     "category": "pantai",
     "location": "Dumai",
     "rating": 4.3,
-    "images": [
-      "https://loremflickr.com/1600/900/pantai,teluk,makmur,pantai,dumai,riau,indonesia?lock=4624124",
-      "https://loremflickr.com/1600/900/pantai,teluk,makmur,pantai,dumai,riau,indonesia?lock=4006936",
-      "https://loremflickr.com/1600/900/pantai,teluk,makmur,pantai,dumai,riau,indonesia?lock=8690472"
-    ]
+    "images": []
   },
   {
     "id": "riau-042",
@@ -539,11 +379,7 @@
     "category": "religi",
     "location": "Pekanbaru",
     "rating": 4.8,
-    "images": [
-      "https://loremflickr.com/1600/900/masjid,agung,an,nur,religi,pekanbaru,riau,indonesia?lock=5341165",
-      "https://loremflickr.com/1600/900/masjid,agung,an,nur,religi,pekanbaru,riau,indonesia?lock=8394256",
-      "https://loremflickr.com/1600/900/masjid,agung,an,nur,religi,pekanbaru,riau,indonesia?lock=8477023"
-    ]
+    "images": []
   },
   {
     "id": "riau-043",
@@ -552,11 +388,7 @@
     "category": "edukasi",
     "location": "Pekanbaru",
     "rating": 4.6,
-    "images": [
-      "https://loremflickr.com/1600/900/perpustakaan,soeman,hs,edukasi,pekanbaru,riau,indonesia?lock=1160076",
-      "https://loremflickr.com/1600/900/perpustakaan,soeman,hs,edukasi,pekanbaru,riau,indonesia?lock=8153807",
-      "https://loremflickr.com/1600/900/perpustakaan,soeman,hs,edukasi,pekanbaru,riau,indonesia?lock=2542485"
-    ]
+    "images": []
   },
   {
     "id": "riau-044",
@@ -565,11 +397,7 @@
     "category": "taman rekreasi",
     "location": "Pekanbaru",
     "rating": 4.2,
-    "images": [
-      "https://loremflickr.com/1600/900/alam,mayang,taman,rekreasi,pekanbaru,riau,indonesia?lock=7629817",
-      "https://loremflickr.com/1600/900/alam,mayang,taman,rekreasi,pekanbaru,riau,indonesia?lock=3463511",
-      "https://loremflickr.com/1600/900/alam,mayang,taman,rekreasi,pekanbaru,riau,indonesia?lock=6348197"
-    ]
+    "images": []
   },
   {
     "id": "riau-045",
@@ -578,11 +406,7 @@
     "category": "wisata kota",
     "location": "Pekanbaru",
     "rating": 4.1,
-    "images": [
-      "https://loremflickr.com/1600/900/pasar,bawah,wisata,kota,pekanbaru,riau,indonesia?lock=6242544",
-      "https://loremflickr.com/1600/900/pasar,bawah,wisata,kota,pekanbaru,riau,indonesia?lock=8853263",
-      "https://loremflickr.com/1600/900/pasar,bawah,wisata,kota,pekanbaru,riau,indonesia?lock=806910"
-    ]
+    "images": []
   },
   {
     "id": "riau-046",
@@ -591,11 +415,7 @@
     "category": "danau",
     "location": "Pekanbaru",
     "rating": 4.0,
-    "images": [
-      "https://loremflickr.com/1600/900/danau,limbungan,danau,pekanbaru,riau,indonesia?lock=1641897",
-      "https://loremflickr.com/1600/900/danau,limbungan,danau,pekanbaru,riau,indonesia?lock=8967559",
-      "https://loremflickr.com/1600/900/danau,limbungan,danau,pekanbaru,riau,indonesia?lock=4435679"
-    ]
+    "images": []
   },
   {
     "id": "riau-047",
@@ -604,11 +424,7 @@
     "category": "budaya",
     "location": "Pekanbaru",
     "rating": 4.1,
-    "images": [
-      "https://loremflickr.com/1600/900/bandar,serai,budaya,pekanbaru,riau,indonesia?lock=9205356",
-      "https://loremflickr.com/1600/900/bandar,serai,budaya,pekanbaru,riau,indonesia?lock=6772201",
-      "https://loremflickr.com/1600/900/bandar,serai,budaya,pekanbaru,riau,indonesia?lock=9538070"
-    ]
+    "images": []
   },
   {
     "id": "riau-048",
@@ -617,11 +433,7 @@
     "category": "religi",
     "location": "Pekanbaru",
     "rating": 4.6,
-    "images": [
-      "https://loremflickr.com/1600/900/masjid,raya,senapelan,religi,pekanbaru,riau,indonesia?lock=9049077",
-      "https://loremflickr.com/1600/900/masjid,raya,senapelan,religi,pekanbaru,riau,indonesia?lock=7663017",
-      "https://loremflickr.com/1600/900/masjid,raya,senapelan,religi,pekanbaru,riau,indonesia?lock=9325980"
-    ]
+    "images": []
   },
   {
     "id": "riau-049",
@@ -630,11 +442,7 @@
     "category": "edukasi",
     "location": "Pekanbaru",
     "rating": 4.3,
-    "images": [
-      "https://loremflickr.com/1600/900/asia,farm,pekanbaru,edukasi,pekanbaru,riau,indonesia?lock=9338755",
-      "https://loremflickr.com/1600/900/asia,farm,pekanbaru,edukasi,pekanbaru,riau,indonesia?lock=7796602",
-      "https://loremflickr.com/1600/900/asia,farm,pekanbaru,edukasi,pekanbaru,riau,indonesia?lock=4100529"
-    ]
+    "images": []
   },
   {
     "id": "riau-050",
@@ -643,11 +451,7 @@
     "category": "budaya",
     "location": "Pekanbaru",
     "rating": 4.4,
-    "images": [
-      "https://loremflickr.com/1600/900/rumah,tenun,kampung,bandar,budaya,pekanbaru,riau,indonesia?lock=6124914",
-      "https://loremflickr.com/1600/900/rumah,tenun,kampung,bandar,budaya,pekanbaru,riau,indonesia?lock=2413860",
-      "https://loremflickr.com/1600/900/rumah,tenun,kampung,bandar,budaya,pekanbaru,riau,indonesia?lock=8369567"
-    ]
+    "images": []
   },
   {
     "id": "riau-051",
@@ -656,10 +460,6 @@
     "category": "sejarah",
     "location": "Pekanbaru",
     "rating": 3.9,
-    "images": [
-      "https://loremflickr.com/1600/900/batu,gajah,sejarah,pekanbaru,riau,indonesia?lock=8675690",
-      "https://loremflickr.com/1600/900/batu,gajah,sejarah,pekanbaru,riau,indonesia?lock=2210801",
-      "https://loremflickr.com/1600/900/batu,gajah,sejarah,pekanbaru,riau,indonesia?lock=9699607"
-    ]
+    "images": []
   }
 ]

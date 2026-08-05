@@ -29,21 +29,56 @@
       <section class="result-card">
         <div class="result-head">
           <h2>Galeri Destinasi</h2>
-          <p id="result-summary">Minimal 3 gambar sesuai data destinasi.</p>
+          <p id="result-summary">Semua gambar yang berhasil dipetakan dari folder lokal akan ditampilkan.</p>
         </div>
 
         <div class="detail-gallery">
-          {% for image in destination.images[:3] %}
+          {% for image in destination.images %}
           <img
             src="{{ image }}"
             alt="{{ destination.name }} - gambar {{ loop.index }}"
             loading="lazy"
             referrerpolicy="no-referrer"
-            onerror="this.onerror=null;this.src='{{ destination.fallback_images[loop.index0] if destination.fallback_images else '/static/fallback-destination.svg' }}';"
+            data-fallback1="{{ destination.fallback_images[0] if destination.fallback_images else '' }}"
+            data-fallback2="/static/fallback-destination.svg"
+            onerror="handleImageError(this);"
           />
           {% endfor %}
         </div>
       </section>
+
+      <script>
+        function handleImageError(img) {
+          const fallback1 = img.getAttribute('data-fallback1');
+          const fallback2 = img.getAttribute('data-fallback2');
+          
+          // Prevent infinite loop
+          if (img.dataset.retryCount === undefined) {
+            img.dataset.retryCount = 0;
+          }
+          
+          img.dataset.retryCount = parseInt(img.dataset.retryCount) + 1;
+          
+          // Try fallback1 first (Picsum)
+          if (img.dataset.retryCount === 1 && fallback1) {
+            img.src = fallback1;
+            img.onerror = function() { handleImageError(this); };
+          }
+          // Then try fallback2 (local SVG)
+          else if (img.dataset.retryCount === 2 && fallback2) {
+            img.src = fallback2;
+            img.onerror = null; // Stop retrying
+          }
+          // Final fallback - show placeholder color
+          else {
+            img.style.backgroundColor = '#f0f0f0';
+            img.style.display = 'flex';
+            img.style.alignItems = 'center';
+            img.style.justifyContent = 'center';
+            img.alt = 'Gambar tidak tersedia';
+          }
+        }
+      </script>
     </main>
   </body>
 </html>

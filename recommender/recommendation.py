@@ -27,7 +27,12 @@ class DestinationRecommender:
         self.data = load_processed_data(PROCESSED_DATA_PATH)
         self.embeddings = load_embeddings(EMBEDDINGS_PATH)
 
+    def refresh_data(self) -> None:
+        self.data = load_processed_data(PROCESSED_DATA_PATH)
+
     def recommend(self, query: str, top_n: int = TOP_N_DEFAULT) -> list[DestinationResult]:
+        self.refresh_data()
+
         cleaned_query = clean_text(query)
         if not cleaned_query:
             return []

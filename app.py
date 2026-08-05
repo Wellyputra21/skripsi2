@@ -3,7 +3,7 @@ from dataclasses import asdict
 from flask import Flask, abort, jsonify, render_template, request
 
 from recommender.config import EMBEDDINGS_PATH, PROCESSED_DATA_PATH
-from recommender.data_pipeline import normalize_images
+from recommender.data_pipeline import load_processed_data, normalize_images
 from recommender.recommendation import DestinationRecommender
 
 app = Flask(__name__)
@@ -50,10 +50,9 @@ def init_recommender() -> None:
 
 
 def find_destination_by_id(destination_id: str) -> dict | None:
-    if recommender is None:
-        return None
+    rows = load_processed_data(PROCESSED_DATA_PATH)
 
-    for row in recommender.data:
+    for row in rows:
         if row.get("id") == destination_id:
             destination = dict(row)
             images, fallback_images = normalize_images(destination)
