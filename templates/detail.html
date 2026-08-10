@@ -11,25 +11,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   </head>
   <body>
     <main class="page detail-page">
-      <section class="hero detail-hero">
+      <section class="result-card detail-card">
         <a class="back-link" href="/">Kembali ke pencarian</a>
         <p class="eyebrow">Detail Destinasi</p>
         <h1>{{ destination.name }}</h1>
-        <p class="subtitle">{{ destination.description }}</p>
-        <div class="chip-row">
-          <span class="chip">Kategori: {{ destination.category }}</span>
-          <span class="chip">Lokasi: {{ destination.location }}</span>
-          <span class="chip">Rating: {{ destination.rating }}</span>
-        </div>
       </section>
 
       <section class="result-card">
         <div class="result-head">
-          <h2>Galeri Destinasi</h2>
-          <p id="result-summary">Semua gambar yang berhasil dipetakan dari folder lokal akan ditampilkan.</p>
+          <h2>Galeri</h2>
+          <p id="result-summary">{{ destination.images|length }} gambar tersedia.</p>
         </div>
 
         <div class="detail-gallery">
@@ -39,46 +38,45 @@
             alt="{{ destination.name }} - gambar {{ loop.index }}"
             loading="lazy"
             referrerpolicy="no-referrer"
-            data-fallback1="{{ destination.fallback_images[0] if destination.fallback_images else '' }}"
-            data-fallback2="/static/fallback-destination.svg"
-            onerror="handleImageError(this);"
+            onerror="this.onerror=null; this.src='/static/fallback-destination.svg';"
           />
           {% endfor %}
         </div>
       </section>
 
-      <script>
-        function handleImageError(img) {
-          const fallback1 = img.getAttribute('data-fallback1');
-          const fallback2 = img.getAttribute('data-fallback2');
-          
-          // Prevent infinite loop
-          if (img.dataset.retryCount === undefined) {
-            img.dataset.retryCount = 0;
-          }
-          
-          img.dataset.retryCount = parseInt(img.dataset.retryCount) + 1;
-          
-          // Try fallback1 first (Picsum)
-          if (img.dataset.retryCount === 1 && fallback1) {
-            img.src = fallback1;
-            img.onerror = function() { handleImageError(this); };
-          }
-          // Then try fallback2 (local SVG)
-          else if (img.dataset.retryCount === 2 && fallback2) {
-            img.src = fallback2;
-            img.onerror = null; // Stop retrying
-          }
-          // Final fallback - show placeholder color
-          else {
-            img.style.backgroundColor = '#f0f0f0';
-            img.style.display = 'flex';
-            img.style.alignItems = 'center';
-            img.style.justifyContent = 'center';
-            img.alt = 'Gambar tidak tersedia';
-          }
-        }
-      </script>
+      <section class="result-card detail-card">
+        <h2 class="detail-heading">Deskripsi Singkat</h2>
+        <p class="detail-description">{{ destination.description }}</p>
+        <p class="meta">
+          Kategori: {{ destination.category }} &middot; Lokasi: {{ destination.location }}
+          &middot; Rating: {{ destination.rating }}
+        </p>
+      </section>
+
+      <section class="result-card detail-card">
+        <h2 class="detail-heading">Lokasi</h2>
+        {% if destination.latitude is not none and destination.longitude is not none %}
+        <div id="detail-map" class="detail-map"></div>
+        <p class="meta">{{ destination.location }}</p>
+        {% else %}
+        <p class="meta">Lokasi: {{ destination.location }}</p>
+        {% endif %}
+      </section>
     </main>
+    {% if destination.latitude is not none and destination.longitude is not none %}
+    <script>
+      (function () {
+        var lat = {{ destination.latitude }};
+        var lng = {{ destination.longitude }};
+        var name = {{ destination.name | tojson }};
+        var map = L.map("detail-map").setView([lat, lng], 13);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: "&copy; OpenStreetMap contributors",
+        }).addTo(map);
+        L.marker([lat, lng]).addTo(map).bindPopup(name).openPopup();
+      })();
+    </script>
+    {% endif %}
   </body>
 </html>

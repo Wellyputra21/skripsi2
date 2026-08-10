@@ -39,6 +39,47 @@ def recommend() -> tuple[object, int] | object:
     return jsonify({"query": query, "results": [asdict(row) for row in results]})
 
 
+def _destination_payload(row: dict) -> dict:
+    images, fallback_images = normalize_images(row)
+    return {
+        "id": row["id"],
+        "name": row["name"],
+        "description": row["description"],
+        "category": row["category"],
+        "location": row["location"],
+        "rating": float(row["rating"]),
+        "latitude": row.get("latitude"),
+        "longitude": row.get("longitude"),
+        "images": images,
+        "fallback_images": fallback_images,
+    }
+
+
+@app.get("/locations")
+def list_locations():
+    rows = load_processed_data(PROCESSED_DATA_PATH)
+    locations: list[str] = []
+    seen: set[str] = set()
+    for row in rows:
+        loc = str(row.get("location", "")).strip()
+        if loc and loc not in seen:
+            seen.add(loc)
+            locations.append(loc)
+    return jsonify({"locations": locations})
+
+
+@app.get("/destinations")
+def list_destinations():
+    location = (request.args.get("location") or "").strip()
+    rows = load_processed_data(PROCESSED_DATA_PATH)
+    results = []
+    for row in rows:
+        if location and str(row.get("location", "")).strip().lower() != location.lower():
+            continue
+        results.append(_destination_payload(row))
+    return jsonify({"location": location, "results": results})
+
+
 def init_recommender() -> None:
     global recommender
     if not PROCESSED_DATA_PATH.exists() or not EMBEDDINGS_PATH.exists():

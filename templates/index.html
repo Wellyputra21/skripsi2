@@ -29,30 +29,40 @@
         </div>
       </section>
 
-      <section class="search-card">
-        <form id="recommend-form">
-          <label for="query">Query Preferensi</label>
-          <div class="row">
-            <input
-              id="query"
-              name="query"
-              type="text"
-              placeholder="Contoh: pantai keluarga dengan fasilitas lengkap"
-              required
-            />
-            <input id="top_n" name="top_n" type="number" min="1" max="10" value="5" />
-            <button type="submit">Cari Rekomendasi</button>
-          </div>
-        </form>
-      </section>
+      <div class="layout">
+        <aside class="sidebar">
+          <p class="eyebrow">Jelajahi</p>
+          <h2>Kabupaten / Kota</h2>
+          <ul id="location-list" class="location-list"></ul>
+        </aside>
 
-      <section class="result-card">
-        <div class="result-head">
-          <h2>Hasil Rekomendasi</h2>
-          <p id="result-summary">Belum ada pencarian.</p>
+        <div class="main-col">
+          <section class="search-card">
+            <form id="recommend-form">
+              <label for="query">Query Preferensi</label>
+              <div class="row">
+                <input
+                  id="query"
+                  name="query"
+                  type="text"
+                  placeholder="Contoh: pantai keluarga dengan fasilitas lengkap"
+                  required
+                />
+                <input id="top_n" name="top_n" type="number" min="1" max="10" value="5" />
+                <button type="submit">Cari Rekomendasi</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="result-card">
+            <div class="result-head">
+              <h2 id="result-title">Hasil Rekomendasi</h2>
+              <p id="result-summary">Belum ada pencarian.</p>
+            </div>
+            <ul id="results"></ul>
+          </section>
         </div>
-        <ul id="results"></ul>
-      </section>
+      </div>
     </main>
 
     <script src="/static/script.js"></script>

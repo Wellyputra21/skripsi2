@@ -1,6 +1,10 @@
 const form = document.getElementById("recommend-form");
 const resultsList = document.getElementById("results");
 const resultSummary = document.getElementById("result-summary");
+const resultTitle = document.getElementById("result-title");
+const locationList = document.getElementById("location-list");
+
+let activeLocation = null;
 
 function handleImageError(img) {
   const fallback1 = img.getAttribute('data-fallback1');
@@ -33,21 +37,24 @@ function handleImageError(img) {
   }
 }
 
-function renderResults(results) {
+function renderResults(results, summary) {
   resultsList.innerHTML = "";
 
   if (!results.length) {
-    resultSummary.textContent = "0 destinasi ditemukan.";
-    resultsList.innerHTML = '<li class="item">Tidak ada hasil untuk query tersebut.</li>';
+    resultSummary.textContent = summary || "0 destinasi ditemukan.";
+    resultsList.innerHTML = '<li class="item">Tidak ada destinasi ditemukan.</li>';
     return;
   }
 
-  resultSummary.textContent = `${results.length} destinasi paling relevan ditemukan.`;
+  resultSummary.textContent = summary || `${results.length} destinasi paling relevan ditemukan.`;
 
   for (const item of results) {
     const li = document.createElement("li");
     li.className = "item";
-    const similarityPercent = Math.max(0, Math.min(100, ((item.score + 1) / 2) * 100));
+    const hasScore = typeof item.score === "number";
+    const similarityPercent = hasScore
+      ? Math.max(0, Math.min(100, ((item.score + 1) / 2) * 100))
+      : 0;
     const images = Array.isArray(item.images) ? item.images.slice(0, 3) : [];
     const fallbackImages = Array.isArray(item.fallback_images)
       ? item.fallback_images.slice(0, 3)
@@ -55,12 +62,19 @@ function renderResults(results) {
     const galleryHtml = images.length
       ? `<div class="gallery">${images
           .map(
-            (src, index) =>
-              `<img src="${src}" alt="${item.name} - gambar ${index + 1}" loading="lazy" referrerpolicy="no-referrer" data-fallback1="${
-                fallbackImages[index] || ""
+            (src, i) =>
+              `<img src="${src}" alt="${item.name} - gambar ${i + 1}" loading="lazy" referrerpolicy="no-referrer" data-fallback1="${
+                fallbackImages[i] || ""
               }" data-fallback2="/static/fallback-destination.svg" onerror="handleImageError(this);" />`
           )
           .join("")}</div>`
+      : "";
+
+    const scoreHtml = hasScore
+      ? `<div class="score-wrap">
+          <div class="score-label">Skor kemiripan: <strong>${item.score.toFixed(4)}</strong></div>
+          <div class="score-track"><div class="score-fill" style="width:${similarityPercent.toFixed(1)}%"></div></div>
+        </div>`
       : "";
 
     li.innerHTML = `
@@ -73,10 +87,7 @@ function renderResults(results) {
           <span class="chip">Lokasi: ${item.location}</span>
           <span class="chip">Rating: ${item.rating}</span>
         </div>
-        <div class="score-wrap">
-          <div class="score-label">Skor kemiripan: <strong>${item.score.toFixed(4)}</strong></div>
-          <div class="score-track"><div class="score-fill" style="width:${similarityPercent.toFixed(1)}%"></div></div>
-        </div>
+        ${scoreHtml}
       </a>
     `;
     resultsList.appendChild(li);
@@ -93,6 +104,8 @@ form.addEventListener("submit", async (event) => {
     return;
   }
 
+  setActiveLocation(null);
+  resultTitle.textContent = "Hasil Rekomendasi";
   resultSummary.textContent = "Sedang memproses rekomendasi...";
   resultsList.innerHTML = '<li class="item">Memproses rekomendasi...</li>';
 
@@ -119,3 +132,51 @@ form.addEventListener("submit", async (event) => {
     resultsList.innerHTML = '<li class="item">Tidak dapat terhubung ke server.</li>';
   }
 });
+
+async function loadLocations() {
+  try {
+    const res = await fetch("/locations");
+    const payload = await res.json();
+    const list = payload.locations || [];
+    locationList.innerHTML = "";
+    for (const loc of list) {
+      const li = document.createElement("li");
+      li.innerHTML = `<button type="button" class="location-btn" data-location="${loc}">${loc}</button>`;
+      locationList.appendChild(li);
+    }
+  } catch (e) {
+    locationList.innerHTML =
+      '<li class="location-item">Tidak dapat memuat kabupaten.</li>';
+  }
+}
+
+function setActiveLocation(location) {
+  activeLocation = location;
+  locationList.querySelectorAll(".location-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.location === location);
+  });
+}
+
+async function showLocation(location) {
+  setActiveLocation(location);
+  resultTitle.textContent = `Wisata di ${location}`;
+  resultSummary.textContent = "Memuat destinasi...";
+  resultsList.innerHTML = '<li class="item">Memuat destinasi...</li>';
+  try {
+    const res = await fetch(`/destinations?location=${encodeURIComponent(location)}`);
+    const payload = await res.json();
+    const list = payload.results || [];
+    renderResults(list, `${list.length} destinasi ditemukan di ${location}.`);
+  } catch (e) {
+    resultSummary.textContent = "Gagal memuat destinasi.";
+    resultsList.innerHTML = '<li class="item">Tidak dapat terhubung ke server.</li>';
+  }
+}
+
+locationList.addEventListener("click", (event) => {
+  const btn = event.target.closest(".location-btn");
+  if (!btn) return;
+  showLocation(btn.dataset.location);
+});
+
+loadLocations();

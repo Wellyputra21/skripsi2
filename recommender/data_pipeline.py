@@ -201,6 +201,8 @@ def preprocess_dataset(raw_path: Path, processed_path: Path) -> list[dict[str, A
                 "category": row["category"],
                 "location": row["location"],
                 "rating": row["rating"],
+                "latitude": row.get("latitude"),
+                "longitude": row.get("longitude"),
                 "images": images,
                 "fallback_images": fallback_images,
                 "text_for_embedding": text_for_embedding,
