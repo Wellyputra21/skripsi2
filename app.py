@@ -1,4 +1,9 @@
+import json
+import os
+import urllib.error
+import urllib.request
 from dataclasses import asdict
+from pathlib import Path
 
 from flask import Flask, abort, jsonify, render_template, request
 
@@ -8,6 +13,40 @@ from recommender.recommendation import DestinationRecommender
 
 app = Flask(__name__)
 recommender: DestinationRecommender | None = None
+
+ENV_PATH = Path(__file__).resolve().parent / ".env"
+DEEPSEEK_API_URL = "https://api.deepseek.com/chat/completions"
+
+
+def load_env() -> None:
+    """Load KEY=VALUE pairs from .env without requiring python-dotenv."""
+    if not ENV_PATH.exists():
+        return
+    for line in ENV_PATH.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+load_env()
+
+
+def _destination_catalog() -> str:
+    try:
+        rows = load_processed_data(PROCESSED_DATA_PATH)
+    except Exception:
+        return ""
+    entries = [
+        f"{row.get('name', '')} ({row.get('location', '')}, {row.get('category', '')})"
+        for row in rows
+        if row.get("name")
+    ]
+    return "; ".join(entries)
 
 
 @app.get("/")
@@ -78,6 +117,71 @@ def list_destinations():
             continue
         results.append(_destination_payload(row))
     return jsonify({"location": location, "results": results})
+
+
+@app.post("/chatbot")
+def chatbot():
+    api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
+    if not api_key:
+        return jsonify({"error": "API key DeepSeek belum diatur di file .env"}), 500
+
+    payload = request.get_json(silent=True) or {}
+    messages = payload.get("messages")
+    if not isinstance(messages, list) or not messages:
+        return jsonify({"error": "messages is required"}), 400
+
+    catalog = _destination_catalog()
+    system_prompt = (
+        "Kamu adalah asisten wisata Provinsi Riau, Indonesia, pada Sistem Rekomendasi "
+        "Wisata Riau. Jawab dalam Bahasa Indonesia dengan ringkas, ramah, dan informatif. "
+        "Berikut data destinasi yang tersedia:"
+        f" {catalog or '(data tidak tersedia)'}"
+    )
+
+    messages_for_api = [{"role": "system", "content": system_prompt}]
+    for msg in messages[-10:]:
+        role = msg.get("role")
+        content = str(msg.get("content", "")).strip()
+        if role in ("user", "assistant") and content:
+            messages_for_api.append({"role": role, "content": content})
+
+    body = {
+        "model": os.environ.get("DEEPSEEK_MODEL", "deepseek-chat").strip(),
+        "messages": messages_for_api,
+        "temperature": 0.7,
+        "max_tokens": 512,
+    }
+
+    request_data = json.dumps(body).encode("utf-8")
+    req = urllib.request.Request(
+        DEEPSEEK_API_URL,
+        data=request_data,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+            "User-Agent": "wisata-riau-chatbot/1.0",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")[:500]
+        return (
+            jsonify({"error": f"DeepSeek API error {exc.code}: {detail}"}),
+            exc.code or 502,
+        )
+    except Exception as exc:
+        return jsonify({"error": f"Gagal terhubung ke DeepSeek: {exc}"}), 502
+
+    try:
+        reply = result["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError):
+        return jsonify({"error": "Respons dari DeepSeek tidak valid"}), 502
+
+    return jsonify({"reply": reply})
 
 
 def init_recommender() -> None:

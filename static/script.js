@@ -1,10 +1,15 @@
 const form = document.getElementById("recommend-form");
+const queryInput = document.getElementById("query");
+const topNInput = document.getElementById("top_n");
 const resultsList = document.getElementById("results");
 const resultSummary = document.getElementById("result-summary");
 const resultTitle = document.getElementById("result-title");
-const locationList = document.getElementById("location-list");
-
-let activeLocation = null;
+const locationsToggle = document.getElementById("locations-toggle");
+const locationDropdown = document.getElementById("location-dropdown");
+const locationGrid = document.getElementById("location-grid");
+const featuredList = document.getElementById("featured-list");
+const statDestinations = document.getElementById("stat-destinations");
+const statLocations = document.getElementById("stat-locations");
 
 function handleImageError(img) {
   const fallback1 = img.getAttribute('data-fallback1');
@@ -35,6 +40,11 @@ function handleImageError(img) {
     img.style.justifyContent = 'center';
     img.alt = 'Gambar tidak tersedia';
   }
+}
+
+function scrollToResults() {
+  const el = document.getElementById("hasil");
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function renderResults(results, summary) {
@@ -97,14 +107,13 @@ function renderResults(results, summary) {
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const query = document.getElementById("query").value.trim();
-  const topN = Number(document.getElementById("top_n").value || 5);
+  const query = queryInput.value.trim();
+  const topN = Number(topNInput.value || 5);
 
   if (!query) {
     return;
   }
 
-  setActiveLocation(null);
   resultTitle.textContent = "Hasil Rekomendasi";
   resultSummary.textContent = "Sedang memproses rekomendasi...";
   resultsList.innerHTML = '<li class="item">Memproses rekomendasi...</li>';
@@ -112,9 +121,7 @@ form.addEventListener("submit", async (event) => {
   try {
     const response = await fetch("/recommend", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query, top_n: topN }),
     });
 
@@ -126,7 +133,8 @@ form.addEventListener("submit", async (event) => {
       return;
     }
 
-    renderResults(payload.results || []);
+    renderResults(payload.results || [], `${(payload.results || []).length} destinasi paling relevan ditemukan.`);
+    scrollToResults();
   } catch (error) {
     resultSummary.textContent = "Gagal terhubung ke server.";
     resultsList.innerHTML = '<li class="item">Tidak dapat terhubung ke server.</li>';
@@ -138,27 +146,26 @@ async function loadLocations() {
     const res = await fetch("/locations");
     const payload = await res.json();
     const list = payload.locations || [];
-    locationList.innerHTML = "";
+    if (statLocations) statLocations.textContent = String(list.length);
+
+    locationDropdown.innerHTML = "";
+    locationGrid.innerHTML = "";
     for (const loc of list) {
-      const li = document.createElement("li");
-      li.innerHTML = `<button type="button" class="location-btn" data-location="${loc}">${loc}</button>`;
-      locationList.appendChild(li);
+      const menuItem = document.createElement("li");
+      menuItem.innerHTML = `<button type="button" class="dropdown-item" data-location="${loc}">${loc}</button>`;
+      locationDropdown.appendChild(menuItem);
+
+      const cell = document.createElement("li");
+      cell.innerHTML = `<button type="button" class="location-btn" data-location="${loc}">${loc}</button>`;
+      locationGrid.appendChild(cell);
     }
   } catch (e) {
-    locationList.innerHTML =
-      '<li class="location-item">Tidak dapat memuat kabupaten.</li>';
+    locationDropdown.innerHTML = '<li><button type="button" class="dropdown-item">Gagal memuat kabupaten.</button></li>';
   }
 }
 
-function setActiveLocation(location) {
-  activeLocation = location;
-  locationList.querySelectorAll(".location-btn").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.location === location);
-  });
-}
-
 async function showLocation(location) {
-  setActiveLocation(location);
+  locationDropdown.classList.remove("open");
   resultTitle.textContent = `Wisata di ${location}`;
   resultSummary.textContent = "Memuat destinasi...";
   resultsList.innerHTML = '<li class="item">Memuat destinasi...</li>';
@@ -167,16 +174,149 @@ async function showLocation(location) {
     const payload = await res.json();
     const list = payload.results || [];
     renderResults(list, `${list.length} destinasi ditemukan di ${location}.`);
+    scrollToResults();
   } catch (e) {
     resultSummary.textContent = "Gagal memuat destinasi.";
     resultsList.innerHTML = '<li class="item">Tidak dapat terhubung ke server.</li>';
   }
 }
 
-locationList.addEventListener("click", (event) => {
+async function renderFeatured() {
+  try {
+    const res = await fetch("/destinations");
+    const payload = await res.json();
+    const all = payload.results || [];
+    if (statDestinations) statDestinations.textContent = String(all.length);
+    const top = all.slice().sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 6);
+
+    if (!featuredList) return;
+    featuredList.innerHTML = "";
+    for (const item of top) {
+      const img = (item.images && item.images[0]) || "/static/fallback-destination.svg";
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <a class="featured-card item-link" href="/destination/${item.id}">
+          <div class="featured-media">
+            <img src="${img}" alt="${item.name}" loading="lazy"
+              onerror="this.onerror=null; this.src='/static/fallback-destination.svg';" />
+          </div>
+          <div class="featured-body">
+            <h3>${item.name}</h3>
+            <div class="chip-row">
+              <span class="chip">${item.category}</span>
+              <span class="chip">${item.location}</span>
+              <span class="chip">Rating: ${item.rating}</span>
+            </div>
+          </div>
+        </a>
+      `;
+      featuredList.appendChild(li);
+    }
+  } catch (e) {
+    if (featuredList) {
+      featuredList.innerHTML = '<li class="item">Gagal memuat destinasi unggulan.</li>';
+    }
+  }
+}
+
+locationsToggle.addEventListener("click", (event) => {
+  event.stopPropagation();
+  locationDropdown.classList.toggle("open");
+});
+
+locationDropdown.addEventListener("click", (event) => {
+  const btn = event.target.closest(".dropdown-item");
+  if (!btn) return;
+  showLocation(btn.dataset.location);
+});
+
+locationGrid.addEventListener("click", (event) => {
   const btn = event.target.closest(".location-btn");
   if (!btn) return;
   showLocation(btn.dataset.location);
 });
 
+document.addEventListener("click", () => {
+  locationDropdown.classList.remove("open");
+});
+
 loadLocations();
+renderFeatured();
+
+/* ===== Chatbot UI (tanpa integrasi backend) ===== */
+const chatbot = document.querySelector(".chatbot");
+const chatbotToggle = document.getElementById("chatbot-toggle");
+const chatbotClose = document.getElementById("chatbot-close");
+const chatbotForm = document.getElementById("chatbot-form");
+const chatbotInput = document.getElementById("chatbot-input");
+const chatbotMessages = document.getElementById("chatbot-messages");
+
+function appendChatMessage(role, text) {
+  const div = document.createElement("div");
+  div.className = "chat-msg " + role;
+  div.textContent = text;
+  chatbotMessages.appendChild(div);
+  chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  return div;
+}
+
+function openChatbot() {
+  chatbot.classList.add("open");
+  if (chatbotInput) chatbotInput.focus();
+}
+
+function closeChatbot() {
+  chatbot.classList.remove("open");
+}
+
+chatbotToggle.addEventListener("click", () => {
+  if (chatbot.classList.contains("open")) {
+    closeChatbot();
+  } else {
+    openChatbot();
+  }
+});
+
+chatbotClose.addEventListener("click", closeChatbot);
+
+let chatbotHistory = [];
+
+chatbotForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const text = chatbotInput.value.trim();
+  if (!text || chatbotForm.classList.contains("busy")) return;
+
+  chatbotHistory.push({ role: "user", content: text });
+  appendChatMessage("user", text);
+  chatbotInput.value = "";
+
+  const history = chatbotHistory.slice(-10);
+  const typingEl = appendChatMessage("bot", "Mengetik...");
+  chatbotForm.classList.add("busy");
+
+  try {
+    const res = await fetch("/chatbot", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: history }),
+    });
+    const payload = await res.json();
+    typingEl.remove();
+
+    if (!res.ok) {
+      chatbotHistory.pop();
+      appendChatMessage("bot", "⚠️ " + (payload.error || "Terjadi kesalahan."));
+      return;
+    }
+
+    appendChatMessage("bot", payload.reply || "...");
+    chatbotHistory.push({ role: "assistant", content: payload.reply });
+  } catch (error) {
+    typingEl.remove();
+    chatbotHistory.pop();
+    appendChatMessage("bot", "⚠️ Tidak dapat terhubung ke server.");
+  } finally {
+    chatbotForm.classList.remove("busy");
+    chatbotInput.focus();
+  }
+});

@@ -13,57 +13,156 @@
     <link rel="stylesheet" href="/static/style.css" />
   </head>
   <body>
-    <main class="page">
-      <section class="hero">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#beranda">
+          <span class="brand-dot"></span> WisataRiau
+        </a>
+        <form id="recommend-form" class="navbar-search">
+          <input
+            id="query"
+            name="query"
+            type="text"
+            placeholder="Contoh: pantai keluarga dengan fasilitas lengkap"
+            required
+          />
+          <input id="top_n" name="top_n" type="number" min="1" max="10" value="5" />
+          <button type="submit">Cari</button>
+        </form>
+        <nav class="nav-menu">
+          <a href="#beranda">Beranda</a>
+          <div class="dropdown">
+            <button id="locations-toggle" class="dropdown-toggle" type="button">
+              Kabupaten <span class="caret">&#9662;</span>
+            </button>
+            <ul id="location-dropdown" class="dropdown-menu"></ul>
+          </div>
+          <a href="#tentang">Tentang</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="landing">
+      <section id="beranda" class="landing-hero">
         <p class="eyebrow">Sistem Rekomendasi Semantik</p>
-        <h1>Temukan Destinasi Wisata Riau Berdasarkan Minat Anda</h1>
+        <h1>Temukan Destinasi Wisata Terbaik di Riau</h1>
         <p class="subtitle">
-          Masukkan kata kunci atau preferensi perjalanan. Sistem akan memproses
-          query dengan model pre-trained Sentence-BERT dan menampilkan Top-N
-          rekomendasi.
+          Ketik preferensi perjalanan Anda, dan sistem berbasis Sentence-BERT
+          akan memahami makna kata-kata Anda, bukan sekadar kata kunci, lalu
+          menampilkan Top-N destinasi Riau yang paling relevan.
         </p>
+        <div class="hero-cta">
+          <a class="cta-btn" href="#hasil">Mulai Cari Rekomendasi</a>
+        </div>
         <div class="hero-tags">
           <span class="hero-tag">Sentence-BERT</span>
           <span class="hero-tag">Cosine Similarity</span>
-          <span class="hero-tag">Data Destinasi Riau</span>
+          <span class="hero-tag">51 Destinasi Riau</span>
         </div>
       </section>
 
-      <div class="layout">
-        <aside class="sidebar">
-          <p class="eyebrow">Jelajahi</p>
-          <h2>Kabupaten / Kota</h2>
-          <ul id="location-list" class="location-list"></ul>
-        </aside>
-
-        <div class="main-col">
-          <section class="search-card">
-            <form id="recommend-form">
-              <label for="query">Query Preferensi</label>
-              <div class="row">
-                <input
-                  id="query"
-                  name="query"
-                  type="text"
-                  placeholder="Contoh: pantai keluarga dengan fasilitas lengkap"
-                  required
-                />
-                <input id="top_n" name="top_n" type="number" min="1" max="10" value="5" />
-                <button type="submit">Cari Rekomendasi</button>
-              </div>
-            </form>
-          </section>
-
-          <section class="result-card">
-            <div class="result-head">
-              <h2 id="result-title">Hasil Rekomendasi</h2>
-              <p id="result-summary">Belum ada pencarian.</p>
-            </div>
-            <ul id="results"></ul>
-          </section>
+      <section class="features">
+        <p class="eyebrow">Fitur Utama</p>
+        <h2>Kenapa Menggunakan Sistem Ini?</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">&#128269;</span>
+            <h3>Pencarian Semantik</h3>
+            <p>Sistem memahami maksud query, bukan sekadar mencocokkan kata kunci secara harfiah.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">&#129504;</span>
+            <h3>Sentence-BERT</h3>
+            <p>Model bahasa multibahasa mengubah kalimat menjadi vektor bermakna untuk dibandingkan.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">&#128202;</span>
+            <h3>Top-N Rekomendasi</h3>
+            <p>Hasil diurutkan berdasarkan skor kemiripan kosinus. Yang paling relevan tampil teratas.</p>
+          </article>
         </div>
-      </div>
+      </section>
+
+      <section id="unggulan" class="featured">
+        <p class="eyebrow">Paling Populer</p>
+        <h2>Destinasi Unggulan</h2>
+        <p class="section-sub">Beberapa destinasi dengan rating terbaik di Provinsi Riau.</p>
+        <ul id="featured-list" class="featured-grid"></ul>
+      </section>
+      <section id="kabupaten" class="locations-section">
+        <p class="eyebrow">Jelajahi</p>
+        <h2>Telusuri Berdasarkan Kabupaten / Kota</h2>
+        <p class="section-sub">Klik salah satu kabupaten untuk melihat semua destinasi wisata di sana.</p>
+        <ul id="location-grid" class="location-grid"></ul>
+      </section>
+
+      <section class="stats">
+        <div class="stat">
+          <strong id="stat-destinations">51</strong>
+          <span>Destinasi Wisata</span>
+        </div>
+        <div class="stat">
+          <strong id="stat-locations">12</strong>
+          <span>Kabupaten / Kota</span>
+        </div>
+        <div class="stat">
+          <strong>384</strong>
+          <span>Dimensi Embedding</span>
+        </div>
+      </section>
+
+      <section id="hasil" class="results-section">
+        <div class="result-head">
+          <h2 id="result-title">Hasil</h2>
+          <p id="result-summary">Belum ada pencarian.</p>
+        </div>
+        <ul id="results"></ul>
+      </section>
+
+      <section id="tentang" class="about">
+        <p class="eyebrow">Tentang Sistem</p>
+        <h2>Tentang</h2>
+        <p>
+          Sistem ini mengimplementasikan rekomendasi wisata berbasis semantik.
+          Setiap destinasi direpresentasikan sebagai vektor embedding yang
+          dibangun dari nama, deskripsi, kategori, dan lokasinya menggunakan
+          model Sentence-BERT. Query pengguna diproses dengan cara yang sama,
+          lalu dicocokkan dengan cosine similarity untuk menghasilkan Top-N
+          rekomendasi.
+        </p>
+      </section>
     </main>
+
+    <div class="chatbot">
+      <div id="chatbot-panel" class="chatbot-panel">
+        <div class="chatbot-header">
+          <span class="chatbot-avatar">🤖</span>
+          <div>
+            <strong>WisataRiau Assistant</strong>
+            <small>Asisten wisata Riau</small>
+          </div>
+          <button id="chatbot-close" class="chatbot-close" type="button" aria-label="Tutup">&times;</button>
+        </div>
+        <div id="chatbot-messages" class="chatbot-messages">
+          <div class="chat-msg bot">Halo! 👋 Tanyakan apa saja tentang destinasi wisata Riau.</div>
+        </div>
+        <form id="chatbot-form" class="chatbot-form">
+          <input id="chatbot-input" type="text" placeholder="Tulis pesan..." autocomplete="off" />
+          <button type="submit" aria-label="Kirim">&#10148;</button>
+        </form>
+      </div>
+      <button id="chatbot-toggle" class="chatbot-toggle" type="button" aria-label="Buka chatbot">
+        <span class="chatbot-icon">&#128172;</span>
+        <span class="chatbot-close-icon">&times;</span>
+      </button>
+    </div>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Sistem Rekomendasi Wisata Riau &mdash; Tugas Akhir
+        berbasis Sentence-BERT.
+      </p>
+    </footer>
 
     <script src="/static/script.js"></script>
   </body>
